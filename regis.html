@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			body{
+				font-size: 14px;
+				font-family: "微软雅黑";
+			}
+			a{
+				text-decoration: none;
+				
+			}
+			a img{
+				border:0;
+			}
+			#top{
+				height:95px;
+				padding-left: 188px;
+				margin-bottom: 12px;
+			
+			}
+			#header{
+				height:39px;
+				
+				width:900px;
+				margin-left: 188px;
+			
+				
+			}
+			#header .left, .right{
+				width:394px;
+				height:39px;
+				border-bottom: 1px solid #000;
+				float:left;
+				line-height: 39px;
+				
+			}
+			#header .right p{
+				float:right;
+				margin-right: 10px;
+				letter-spacing: 1px;
+			}
+			#header .center{
+				width:110px;
+				height:39px;
+				
+				border:1px solid #000;
+				border-bottom:0;
+				border-radius: 3px 3px 0 0 ;
+				line-height: 39px;
+				float:left;
+				color:#e1373a;
+				text-align: center;
+				
+				
+			}
+			
+			#banner{
+				height:456px;
+				background:url(imgzhuce/2.png) no-repeat 185px 46px;
+				
+			}
+			#banner .all{
+				width:730px;
+				height:456px;
+			
+				margin-left: 548px;
+				padding-top: 12px;
+			}
+			#banner .all .box{
+				margin-top: 22px;
+				
+				height:37px;
+				
+			}
+			#banner .all .box p{
+				float:left;
+			}
+			#banner .all .box .p1{
+				width:84px;
+				line-height: 37px;
+				text-align: right;
+			}
+			#banner .all .box .p2{
+				height:37px;
+				padding-left: 7px;
+				line-height: 37px;
+				color:#999999;
+			}
+			#banner .all .box .p3{
+				height:37px;
+				padding-left: 7px;
+				line-height: 37px;
+				color:red;
+				display: none;
+			}
+			#banner .all .box .p4{
+				height:30px;
+				width:37px;
+				padding-left: 7px;
+				margin-top: 3px;
+				display: none;
+				
+				
+			}
+			#banner .all .box input{
+				width:267px;
+				height:35px;
+				border: 1px solid #ccc;
+				margin-left: 5px;
+				line-height: 35px;
+			}
+			#banner .all .box .p1 span{
+				color:red;
+			}
+			#banner .all .box input{
+				float:left;
+			}
+			#banner .all .box .inp{
+				width:170px;
+			}
+			#banner .all .box .huo{
+				float:left;
+				width:88px;
+				height: 35px;
+				border:1px solid #ccc;
+				margin-left: 7px;
+				text-align: center;
+				line-height: 37px;
+				text-decoration: none;
+			}
+			#banner .all .box .huo a{
+				color:#434343;
+			}
+			#banner .all .box .huo a:hover{
+				text-decoration: underline;
+			}
+			#banner .all .xie{
+				width:273px;
+				height:12px;
+				margin-left: 90px;
+				font-size: 12px;
+				line-height: 12px;
+				margin-top: 11px;
+			}
+			#banner .all .xie input{
+				float:left;
+				
+			}
+			#banner .all .xie .pfeng{
+				font-size: 12px;
+				float:left;
+			}
+			#banner .all .zhuce{
+				width:270px;
+				height:42px;
+				display: block;
+				margin-left: 90px;
+				margin-top: 29px;
+			}
+			/*#footer{
+				height:306px;
+				
+				padding-top: 32px;
+				border-top:2px solid #dddddd;
+			}
+			#footer .p1{
+				margin-top:10px ;
+				color: #999999;
+				
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<a href="index.html"><img src="imgzhuce/1.jpg"/></a>
+			
+		</div>
+		<div id="header">
+			<div class="left">
+				
+			</div>
+			<div class="center">
+				<b>新用户注册</b>
+				
+			</div>
+			<div class="right">
+				<p>我已经注册，现在就<a href="login.html" style="color:red;">登录</a></p>
+				
+			</div>
+			
+		</div>
+		<div id="banner">
+			<div class="all">
+				
+			
+				<div class='box'>
+					<p class="p1"><span>*</span>手机:</p>
+					<input class="inp1" style="background: url(imgzhuce/2.jpg) no-repeat right 0;" type="text" name="" id="" value="" />
+					<p class="p2 xiao1">请填写您的手机号码</p>
+					<p class="p3 yan1">请输入正确的手机号</p>
+					<p  class ="p4 ok1" style="background:url(imgzhuce/ok.jpg) no-repeat center ;"></p>
+					
+				</div>
+				<div class='box'>
+					<p class="p1"><span>*</span>短信验证码:</p>
+					<input class="inp" type="text" name="" id="" value="" />
+					<div class="huo"><a href="#">获取验证码</a></div>
+					<p class="p2 xiao2">请填写收到的短信验证码 PS：60秒内不能再次发送</p>
+					<p class="p3 yan2">请输入正确的验证码</p>
+					<p  class ="p4 ok2" style="background:url(imgzhuce/ok.jpg) no-repeat center ;"></p>
+					
+				</div>
+				<div class='box'>
+					<p class="p1">邮箱:</p>
+					<input class="inp3" style="background: url(imgzhuce/3.jpg) no-repeat right 0;" type="text" name="" id="" value="" />
+					<p class="p2 xiao3">订单信息和优惠信息通过邮件发送</p>
+					<p class="p3 yan3">请输入正确的邮箱</p>
+					<p  class ="p4 ok3" style="background:url(imgzhuce/ok.jpg) no-repeat center ;"></p>
+				</div>
+				<div class='box'>
+					<p class="p1"><span>*</span>设置密码:</p>
+					<input class="inp4" style="background: url(imgzhuce/4.jpg) no-repeat right 0;" type="text" name="" id="" value="" />
+					<p class="p2 xiao4">6 - 20位，区分大小写</p>
+					<p class="p3 yan4">请输入正确的密码</p>
+					<p  class ="p4 ok4" style="background:url(imgzhuce/ok.jpg) no-repeat center ;"></p>
+				</div>
+				<div class='box'>
+					<p class="p1"><span>*</span>确认密码:</p>
+					<input class="inp5" style="background: url(imgzhuce/4.jpg) no-repeat right 0;" type="text" name="" id="" value="" />
+					<p class="p2 xiao5">请再输入一遍上面填写的密码</p>
+					<p class="p3 yan5">请输入正确的密码</p>
+					<p  class ="p4 ok5" style="background:url(imgzhuce/ok.jpg) no-repeat center ;"></p>
+				</div>
+				<div class="xie"> 
+					<input type="checkbox" name="" id="" value=""  checked/>
+					<p class="pfeng">我已阅读并同意<a href="#">《风尚用户注册协议》</a></p>
+					
+				</div>
+				<a class="zhuce" href="javascript:;"><img src="imgzhuce/zhuce.gif"/></a>
+			</div>
+			
+		</div>
+		<div id="footer">
+			<!--<p style="margin-left:578px"><span style="color:#53585f; font-size: 16px;" class="sp1">触屏版 </span>  <span style="color: #c6276f; font-size: 16px;" class="sp2">电脑版 </span></p>
+			<p style="margin-left: 537px;" class="p1">ICP经营许可证：赣ICP备15000001号</p>
+			<p style="margin-left: 535px;" class="p1">24小时订购和服务热线：4001-677-077</p>     
+			<p style="margin-left: 481px;" class="p1">Copyright 2008-2014，www.fstvgo.com 风尚购物 版权所有</p>
+			<p style="margin-left: 509px;" class="p1">本网站用字经北京北大方正电子有限公司授权许可</p>
+			-->
+		</div>
+		<script type="text/javascript" src="js/regis.js">
+//			$(function(){
+//				$("#footer").load("footer.html");
+//				var oA = $(".zhuce");
+//				$(".inp1").val('');$(".inp").val('');$(".inp3").val('');$(".inp5").val('');
+//				$(".inp4").val('');//***********value值清空
+//				var boo=false;
+//				var oInp1=$(".inp1");
+//				var oInp2=$(".inp");
+//				var oInp3=$(".inp3");
+//				var oInp4=$(".inp4");
+//				var oInp5=$(".inp5");
+//				oA.click(function(){//注册按钮
+//					
+//					var name = $(".inp1").val();
+//					var pass= $(".inp4").val();
+//					setCookie("name",name,5);//创建cookie用于登录验证
+//					setCookie("pass",pass,5);
+//					if(boo==true&&oInp1.val()!=''&&oInp2.val()!=''&&oInp3.val()!=''&&oInp4.val()!=''&&oInp5.val()!=''){
+//						
+//						window.location.href = "login.html"
+//					}else{
+//						alert("注册失败")
+//					}
+//					
+//				})
+//				
+//				
+//				oInp1.blur(function(){
+//					 var  re = /^1\d{10}$/;
+//					 var str=oInp1.val();
+//					    if(re.test(str)){
+//					        $(".ok1").show();
+//					        $(".xiao1").hide();
+//					        $(".yan1").hide();
+//					        boo=true;
+//					        alert(boo)
+//					        
+//					    }else{
+//					        $(".yan1").show().prev().hide();
+//					        $(".ok1").hide();
+//					        
+//					    } 
+//				})
+//				oInp2.blur(function(){
+//					boo=false;
+//					 var  re = /^\d{6}$/;
+//					 var str=oInp2.val();
+//					    if(re.test(str)){
+//					        $(".ok2").show();
+//					        $(".xiao2").hide();
+//					        $(".yan2").hide();
+//					        boo=true;
+//					    }else{
+//					        $(".yan2").show().prev().hide();
+//					        $(".ok2").hide();
+//					    } 
+//				})
+//				oInp3.blur(function(){
+//					boo=false;
+//					 var  re =  /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+//					 var str=oInp3.val();
+//					    if(re.test(str)){
+//					        $(".ok3").show();
+//					        $(".xiao3").hide();
+//					        $(".yan3").hide();
+//					        boo=true;
+//					    }else{
+//					        $(".yan3").show().prev().hide();
+//					        $(".ok3").hide();
+//					    } 
+//				})
+//				oInp4.blur(function(){
+//					boo=false;
+//					 var  re =  /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,20}$/
+//					 var str=oInp4.val();
+//					    if(re.test(str)){
+//					        $(".ok4").show();
+//					        $(".xiao4").hide();
+//					        $(".yan4").hide();
+//					        boo=true;
+//					    }else{
+//					        $(".yan4").show().prev().hide();
+//					        $(".ok4").hide();
+//					    } 
+//					    
+//				})
+//				
+//				oInp5.blur(function(){
+//					boo=false;
+//					
+//					
+//					 var pass1=oInp4.val();
+//					 var str=oInp5.val();
+//					    if(str ==pass1){
+//					    	if(str==''){
+//							$(".yan5").show().prev().hide();
+//						    $(".ok5").hide();
+//							}else{
+//						        $(".ok5").show();
+//						        $(".xiao5").hide();
+//						        $(".yan5").hide();
+//						        boo=true;
+//					    	}
+//					    }else{
+//					        $(".yan5").show().prev().hide();
+//					        $(".ok5").hide();
+//					    } 
+//				})
+//			
+//				
+//				
+//				
+//			})
+//			
+		</script>
+	</body>
+</html>

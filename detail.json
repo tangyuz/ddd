@@ -1,0 +1,11 @@
+{
+	"id":1,
+	"mingcheng":"服装",
+	"data":[
+	{"id":1,"img":"imgDatail/8.jpg","name":"迪菲怡时尚绣珠亮片连衣裙","name1":"199","name2":"1","img1":"imgDatail/8.jpg","huohao":"310066","xiaoliang":"1272","img2":"imgDatail/20.png","img3":"imgDatail/21.png","name3":"199","img4":"imgDatail/30.jpg","img5":"","img6":""},
+	{"id":2,"img":"imgDatail/shizhen1.jpg","name":"迪菲怡时尚绣珠亮片连衣裙","name1":"399","name2":"1","img1":"imgDatail/shizhen1.jpg","huohao":"310066","xiaoliang":"1272","img2":"imgDatail/20.png","img3":"imgDatail/21.png","name3":"399","img4":"imgDatail/shizhen2.jpg","img5":"imgDatail/shizhen3.jpg","img6":"imgDatail/shizhen4.jpg"}
+	
+	
+	]
+
+}

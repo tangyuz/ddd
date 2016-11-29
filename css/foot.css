@@ -1,0 +1,98 @@
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,input,p,img,a{padding:0;margin:0;}
+			
+			body{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				
+			}
+			.w{
+				width:1200px;
+				margin:0 auto;
+			}
+			.l{
+				float:left;
+			}
+			.r{
+				float:right;
+			}
+			a{
+				color:#000000;
+				text-decoration: none;
+			}
+			a:hover{
+				color:red;
+			}
+			ul,li{
+				list-style: none;
+			}
+		#foot{
+			height:245px;
+		}
+		#foot .mian{
+			height:48px;
+			border:1px solid #ccc;
+			background: #f9f9f9;
+		}
+		#foot .mian h4{
+			margin-left: 203px;
+			font-size: 17px;
+			margin-top: 15px;
+			
+		}
+		#foot .mian .search{
+			border:1px solid #ccc;
+			margin-top: 12px;
+			margin-left: 7px;
+		}
+		#foot .mian .input3{
+			height:25px;
+			width:334px;
+			color:#999999;
+			border:0;
+			line-height: 25px;
+			
+		} 
+		#foot .mian .input2{
+			height:27px;
+			width:55px;
+			border:0;
+		} 
+		#foot .mian p{
+			margin-top: 18px;
+			color:#999999;
+			margin-left: 15px;
+		}
+		#foot .new{
+			height:195px;
+		}
+		#foot .new .left{
+			margin-top: 34px;
+			float:left;
+			width:979px;
+		}
+		#foot .new .left ul{
+			width:130px;
+			
+		}
+		#foot .new .left ul li a{
+			color:#666666;
+		}
+		#foot .new ul li a:hover{
+			color:red;
+		}
+		#foot .new .left ul li{
+			margin-bottom: 10px;
+		}
+		#foot .new .left p.p1{
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		#foot .new .dian{
+			height:170px;
+			border-left: 1px solid #ccc;
+			width:213px;
+			margin-top: 10px;
+			background: url(../imgindex/ding.jpg) no-repeat;
+		}
+		

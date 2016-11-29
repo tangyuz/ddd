@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"> 
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<script type="text/javascript" src="js/header1.js">
+			
+		</script>
+		<script type="text/javascript" src="js/foot.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/header1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			#banner{
+				height:180px;
+				background: url(imgFSH/1.jpg) no-repeat 0 13px;
+				
+			}
+			#content{
+				height:594px;
+				width:1218px;
+				margin-left: 32px;
+			}
+			#content .box5{
+				width:362px;
+				height:261px;
+				border:1px solid #ccc;
+				padding:12px;
+				margin-right: 18px;
+				margin-bottom: ;
+			}
+			#content .box5 .tu3{
+				display: block;
+				width:365px;
+				height:165px;
+			}
+			#content .box5 .E1{
+				color:#f2323f;
+				margin-top: 15px;
+				margin-bottom: 7px;
+			}
+			
+			#content .box5 .xiang1{
+				width:115px;
+				height:27px;
+				border-radius: 2px;
+				background: red;
+				color:#fff;
+				text-align: center;
+				line-height: 27px;
+				display: block;
+				margin-top: 17px;
+				margin-left: 252px;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+		</style>
+		
+		
+	</head>
+	<body>
+		<div id="header">
+			
+		</div>
+		<div id="banner" class="w">
+			
+		</div>
+		<div id="content">
+		<!--<div class="box5">
+			<a class="tu3" href="#"><img width="365" height="165" src="imgFSH/2.jpg"/></a>
+			<p class="E1">所有商品在线支付再减10元！</p>
+			<p class="E2"></p>
+			<a class="xiang1" href="#">点击详情</a>	
+		</div>-->
+			
+		</div>
+		<div id="foot">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript">
+			$.ajax({
+				url:"FSH.json",
+				type:"get",
+				async:"true",
+				datatype:"json",
+				success:function(fsh){
+					var data=fsh.data;
+					var str='';
+					for(var i in data){
+						str+='<div class="l box5">'
+						str+='<a class="tu3" href="#"><img width="365" height="165" src="'+data[i].img+'"/></a>'
+						str+='<p class="E1">'+data[i].name+'</p>'
+						str+='<p class="E2"></p>'
+						str+='<a class="xiang1" href="#">点击详情</a>'	
+					    str+='</div>'
+					}
+					$("#content").append(str);
+					daojishi();
+				}
+				
+				
+				
+				
+			})
+			
+	
+			
+			
+			function daojishi(){
+						var str='';
+						var timer=null;
+						var shijian=new Date(2016,8,10);
+						var now=new Date();
+						var cha = shijian - now; //dao.getTime() - now.getTime();//时间差毫秒
+						var tian = Math.floor(cha/1000/86400);
+						var shi = Math.floor(cha/1000%86400/3600);
+						var fen = Math.floor(cha/1000%86400%3600/60);
+						var miao = Math.floor(cha/1000%60);
+						timer=setInterval(me,1000)
+						function me(){
+							miao--;
+							if(miao==-1){
+								fen--;
+								miao=59;
+							}
+							if(fen==-1){
+								shi--;
+								fen=59;
+							}
+							if(shi==-1){
+								tian--;
+								shi=23;
+							}
+							
+							str='剩余：' + tian +'天'+ shi + '时' + fen +'分'+ miao +"秒";
+							$(".E2").text(str);
+						}
+					
+			}
+		</script>
+	</body>
+</html>

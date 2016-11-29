@@ -1,0 +1,28 @@
+{
+	"id":0,
+	"mingcheng":"服装",
+	"data":[
+	{"id":1,"img":"imgHot/x1.jpg","name":"迪菲怡时尚绣珠亮片连衣裙","name1":"¥199","name2":"送1积分","img1":"imgHot/ding.png"},
+	{"id":2,"img":"imgHot/x2.jpg","name":"煮妙妇橘子传说去污霸","name1":"¥199","name2":"送1积分"},
+	{"id":3,"img":"imgHot/x3.jpg","name":"美国JHS急速制冷豪华移动空调","name1":"¥1499","name2":"送7.5积分"},
+	{"id":4,"img":"imgHot/x4.jpg","name":"皇室金爵干红原酒进口尊享组","name1":"¥299","name2":"送2积分"},
+	{"id":5,"img":"imgHot/x5.jpg","name":"好有福东北树蜜8+6组合","name1":"¥199","name2":"送1积分"},
+	{"id":6,"img":"imgHot/x6.jpg","name":"New复古男士套组","name1":"¥399","name2":"送2积分"},
+	{"id":7,"img":"imgHot/x7.jpg","name":"秦利康浓缩液态洗衣机清洁剂","name1":"¥199","name2":"送1积分"},
+	{"id":8,"img":"imgHot/x8.jpg","name":"平西府草原肉30+10美味畅想组","name1":"¥269","name2":"送1.5积分"},
+	{"id":9,"img":"imgHot/x9.jpg","name":"New复古女士套组","name1":"¥399","name2":"送1.7积分"},
+	{"id":10,"img":"imgHot/x10.jpg","name":"沈氏德州拓谷扒鸡美味组合装","name1":"¥199","name2":"送1积分"},
+	{"id":11,"img":"imgHot/x11.jpg","name":"前拉链无感内衣","name1":"¥299","name2":"送1.5积分"},
+	{"id":12,"img":"imgHot/x12.jpg","name":"库克N卡伯恩美丽先生男鞋金宝组","name1":"¥399","name2":"送1.5积分"},
+	{"id":13,"img":"imgHot/x13.jpg","name":"鹿王奥普蒂姆圆领蕾西连衣裙","name1":"¥299","name2":"送1.5积分"},
+	{"id":14,"img":"imgHot/x14.jpg","name":"韩国clara全营养料理机","name1":"¥199","name2":"送1积分"},
+	{"id":15,"img":"imgHot/x15.jpg","name":"诺戴斯丽时尚冰丝连衣裙6件组","name1":"¥1280","name2":"送5积分"},
+	{"id":16,"img":"imgHot/x16.jpg","name":"格林没加强化木地板家装组","name1":"¥199","name2":"送1积分"},
+	{"id":17,"img":"imgHot/x17.jpg","name":"五洲风干牛肉家庭组","name1":"¥169","name2":"送1.5积分"},
+	{"id":18,"img":"imgHot/x18.jpg","name":"宝佳洁自动拧干魔术平板拖","name1":"¥159","name2":"送4积分"},
+	{"id":19,"img":"imgHot/x19.jpg","name":"槿兰换","name1":"¥199","name2":"送3积分"},
+	{"id":20,"img":"imgHot/x20.jpg","name":"柯尼卡女包7件组","name1":"¥269","name2":"送2积分"}
+	
+	]
+
+}

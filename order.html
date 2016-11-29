@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		
+		
+		<style type="text/css">
+			body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,input,p,img,a{padding:0;margin:0;}
+			
+			body{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				height:3000px;
+				
+				
+			}
+			.w{
+				width:900px;
+				margin:0 auto;
+			}
+			.l{
+				float:left;
+			}
+			.r{
+				float:right;
+			}
+			a{
+				color:#000000;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: none;
+				color:red;
+			}
+			ul,li{
+				list-style: none;
+			}
+			a img{
+				border:0;
+			}
+			#header{
+				height:30px;
+				background:#eeeeee;
+				
+			}
+			#header .box{
+				height:22px;
+				margin-left: 842px;
+				padding-top: 8px;
+			}
+			
+			
+			#header .box .p1{
+				padding-right: 15px;
+				height:13px;
+			}
+			#header .box .wangzhan{
+				margin-right: 19px;
+			}
+			#header .box .tui{
+				margin-right: 11px;
+				border-right: 1px solid #ccc;
+				padding:0 10px;
+			}
+			 
+			 .box .box1{
+				width:60px;
+				height:22px;
+				background: #eeeeee;
+				position:relative;
+				
+			}
+			 .box .box1 ul {
+				position: absolute;
+				top:21px;
+				left:0px;
+				width:70px;
+				height:150px;
+				display: none;
+				border:1px solid #ccc;
+				padding-left: 10px;
+				background: #eee;
+				border-top:0;
+				border-bottom: 0;
+			}
+			.box .box1 ul li{
+				height:30px;
+				line-height: 30px;
+			}
+			#banner{
+				height:91px;
+				padding-top: 29px;
+				overflow: hidden;
+				
+			}
+			#banner .logo{
+				display: block;
+			}
+			#banner .jin{
+				width:480px;
+				height:13px;
+				background:url(imgCart/1.png) no-repeat -500px 0px;
+				padding-top: 27px;
+			}
+			#banner .jin .bp{
+				margin-left: 46px;
+			}
+			#banner .jin .bp1{
+				margin-left: 73px;
+				color:red;
+			}
+			#banner .jin .bp2{
+				margin-left: 68px;
+			}
+			#content{
+				min-height: 722px;
+				
+				border:1px solid #ccc;
+			}
+			#content h1{
+				height:45px;
+				background:#f7f7f7;
+				border-bottom: 2px solid #ccc;
+				line-height: 45px;
+				padding-left: 15px;
+				width:885px;
+				
+			}
+			#content .first1{
+				border-bottom: 1px solid #ccc;
+				min-height: 80px;
+			}
+			#content .first1 .shouhuo{
+				display: block;
+				margin-left: 25px;
+				margin-top: 11px;
+			}
+			#content .first1 .xindi{
+				display: block;
+				padding-left: 56px;
+				width:844px;
+				margin-top: 25px;
+				background:#f7f7f7;
+				height:34px;
+			}
+			
+			 .xiangxi{
+				width:898px;
+				height:232px;
+				background:#f7f7f7;
+				display: none;
+			}
+			.xiangxi .inp2{
+				margin-left: 10px;
+			}
+			.xiangxi dl{
+				height:26px;
+				margin-bottom: 5px;
+			}
+			.xiangxi dl dt{
+				width:120px;
+				
+			}
+			.xiangxi dl dd p{
+				float:left;
+				line-height: 26px;
+				margin-right: 20px;
+			}
+			.xiangxi dl dd select{
+				width:109px;
+			}
+			.xiangxi dl dt p{
+				float:right;
+				height:26px;
+				line-height: 26px;
+				
+			}
+			.xiangxi dl dd .jianju{
+				margin-right: 5px;
+			}
+			.xiangxi dl dd input{
+				color:#999;
+				height:24px;
+				border:0;
+				border:1px solid #ccc;
+				
+			}
+			
+			.xiangxi dl dd p span{
+				color:#999;
+				padding:0 10px;
+			}
+			.xiangxi dl dt p span{
+				color:red;
+			}
+			 .xiangxi .queren{
+			 	width:143px;
+			 	height:34px;
+			 	background:red;
+			 	border-radius: 3px;
+			 	color:#fff;
+			 	text-align: center;
+			 	line-height: 34px;
+			 	font-size: 18px;
+			 	margin-left: 62px;
+			 	margin-top: 18px;
+			 	cursor: pointer;
+			 }
+			 .zhongyao{
+			 	width:218px;
+			 	height:28px;
+			 	margin-left: 56px;
+			 	margin-top: 15px;
+			 	color:#999;
+			 }
+			 .xiangxi .quxiao{
+			 	width:64px;
+			 	height:28px;
+			 	border:1px solid #ccc;
+			 	margin-left:5px;
+			 	margin-top: 20px;
+			 	background: #f2f2f2;
+			 	text-align: center;
+			 	line-height: 28px;
+			 	cursor: pointer;
+			 }
+			#content a:hover{
+				color:#000;
+			}
+			
+			#content .first5{
+				height:164px;
+				border-bottom: 1px solid #ccc;
+			}
+			#content .first5 .all1{
+				height:41px;
+				line-height: 41px;
+			}
+			#content .first5 .all1 .B1{
+				margin-left: 25px;
+			}
+			#content .first5 .all1 .B2{
+				margin-left: 720px;
+				color:#0066CC;
+			}
+			#content .first5 .all2{
+				height:28px;
+				background: #f7f7f7;
+			}
+			#content .first5 .all2 .b1{
+				margin-left: 228px;
+			}
+			#content .first5 .all2 .b2{
+				margin-left: 285px;
+			}
+			#content .first5 .all2 .b3{
+				margin-left: 106px;
+			}
+			#content .first5 .all2 .b4{
+				margin-left: 98px;
+			}
+			#content .first5 .all3{
+				height:95px;
+			}
+			#content .first5 .all3 .tupian {
+				width:94px;
+				height:90px;
+				display: block;
+				margin-left: 10px;
+				margin-top: 2px;
+			}
+			#content .first5 .all3 .tupian img{
+				height:90px;
+				width:94px;
+			}
+			#content .first5 .all3 .all4{
+				height:30px;
+				margin-top: 30px;
+				margin-left: 23px;
+			}
+			#content .first5 .all3 .B3{
+				margin-left: 256px;
+				margin-top: 42px;
+			}
+			#content .first5 .all3 .B4{
+				margin-left: 117px;
+				margin-top: 42px;
+			}
+			#content .first5 .all3 .B5{
+				margin-left: 104px;
+				margin-top: 42px;
+			}
+			#content .first5 .all3 .all4 .shangpin{
+				color:#0066CC;
+			}
+				
+		
+			#content .first6{
+				min-height: 60px;
+				border-bottom: 1px solid #ccc;
+				overflow: hidden;
+			}
+			#content .first6 a{
+				display: block;
+				width:160px;
+				height: 15px;
+				margin-top: 9px;
+				padding-left: 22px;
+				
+			}
+			#content .first6 .youhui{
+				height:204px;
+				width:846px;
+				margin-top: 16px;
+				margin-left: 25px;
+				margin-bottom: 20px;
+				background: #fff8f5;
+				display: none;
+			}
+			#content .first6 .youhui .all5{
+				height:28px;
+				width:846px;
+				
+			}
+			#content .first6 .youhui .zuo5{
+				height:28px;
+				width:144px;
+				border:1px solid #ccc;
+				border-bottom: 0;
+				float:left;
+				text-align: center;
+				line-height: 20px;
+			}
+			#content .first6 .youhui .you5{
+				height:28px;
+				width:700px;
+				border-bottom: 1px solid #ccc;
+				float:right;
+			}
+			#content .first6 .youhui .xia5{
+				height:164px;
+				border:1px solid #ccc;
+				border-top: 0;
+				padding-left: 10px;
+				padding-top: 10px;
+			}
+			#content .first6 .youhui .xia5 .er1{
+				height:12px;
+				margin-top:27px ;
+			}
+			#content .first6 .youhui .xia5 .er1 .C1{
+				margin-left: 15px;
+			}
+			#content .first6 .youhui .xia5 .er1 .C2{
+				margin-left: 130px;
+			}
+			#content .first6 .youhui .xia5 .er1 .C3{
+				margin-left: 148px;
+			}
+			#content .first6 .youhui .xia5 .bu{
+				display: block;
+				margin-top: 27px;
+				color:#0066CC;
+			}
+			#content .first6 .lijin{
+				height:86px;
+				width:846px;
+				margin-top: 15px;
+				margin-left: 25px;
+				margin-bottom: 20px;
+				background: #fff8f5;
+				display: none;
+			}
+			#content .first6 .lijin .all6{
+				height:28px;
+				width:846px;
+			}
+			#content .first6 .lijin .left2{
+				height:28px;
+				width:144px;
+				border:1px solid #ccc;
+				border-bottom: 0;
+				float:left;
+				text-align: center;
+				line-height: 20px;
+			}
+			#content .first6 .lijin .right2{
+				height:28px;
+				width:700px;
+				border-bottom: 1px solid #ccc;
+				float:right;
+			}
+			#content .first6 .lijin .f1{
+				height:56px;
+				border:1px solid #ccc;
+				border-top: 0;
+			}
+			#content .first6 .lijin .f1 .d1{
+				margin-top: 23px;
+				margin-right: 20px;
+				margin-left: 10px;
+			}
+			#content .first6 .lijin .f1 .d2{
+				margin-top: 21px;
+				width:120px;
+				height:15px;
+			}
+			#content .first6 .lijin .f1 .d3{
+				margin-top: 18px;
+				background:red;
+				width:35px;
+				height:21px;
+				color:#fff;
+				margin-left: 10px;
+				line-height: 21px;
+				display: block;
+				border-radius: 3px;
+			}
+			#content .first6 .bei{
+				width:846px;
+				height:113px;
+				margin-left: 25px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				display: none;
+			}
+			#content .first6 .common{
+				display: block;
+			}
+			
+			#content .first6 .bei textarea{
+				resize: none;
+				width:842px;
+				height:89px;
+				margin-top: 10px;
+			}
+			#content .first6 a .span1{
+				width:16px;
+				height:16px;
+				display: block;
+				background:url(imgCart/5.png) no-repeat -16px 0;
+				float:left;
+			}
+			#content .first6 a .comm{
+				background:url(imgCart/5.png) no-repeat 0 0;
+			}
+		
+			
+			#new{
+				height:238px;
+				padding-top: 14px;
+				
+			}
+			#new .commn{
+				height:12px;
+				width:160px;
+				margin-left: 718px;
+				margin-bottom: 10px;
+			}
+			
+			#new .ti{
+				height:84px;
+				
+			}
+			#new .ti .tijiao{
+				width:176px;
+				height:42px;
+				color:#fff;
+				background: red;
+				text-align: center;
+				line-height: 42px;
+				border-radius: 3px;
+				display: block;
+				margin-top: 29px;
+			}
+			#new .ti .left1{
+				width:220px;
+				height:36px;
+				margin-top: 29px;
+				margin-left: 482px;
+			}
+			#new .ti .left1 .top4{
+				height:24px;
+			}
+			#new .ti .left1 .xia4{
+				height:12px;
+			}
+			#new .ti .left1 .xia4 .yanse{
+				color:red;
+			}
+		</style>
+		
+		
+		
+	</head>
+	<body>
+		<div id="header">
+			<div class="box">
+					<!--<span class="l sp1"></span>-->
+					<!--<a  class="l tui" href="index.html">退出</a>-->
+					
+					<!--<a  class="l a1" href="#"></a>
+					<a  class="l a2" href="regis.html"></a>-->
+					<p  class="l p1">您好！</p>
+					<a  class="l wangzhan" href="#">网站用户</a>
+					<a  class="l tui" href="index.html">[退出]</a>
+					<!--<a  class="l a3" href="login.html"></a>-->
+				<!--	<p  class="l p2"></p>-->
+					<div class="box1 l">
+						<a class=" p3">我的风尚<img src="imgindex/xiajian.jpg" alt="" /></a>
+						<ul>
+							<li class="first"><a href="#">我的订单</a></li>
+							<li><a href="#">我的积分</a></li>
+							<li><a href="#">我的优惠劵</a></li>
+							<li><a href="#">我的消息</a></li>
+							<li><a href="#">我的收藏</a></li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+		<div id="banner" class="w">
+			<a class="l logo" href="index.html"><img src="imgCart/logo.gif"/></a>
+			<div class="r jin">
+				<p class="l bp">1.我的购物车</p>
+				<p class="l bp1">2.填写核对订单信息</p>
+				<p class="l bp2">3.成功提交订单</p>
+				
+			</div>
+			
+		</div>
+		<div id="content" class="w">
+			<h1>填写并核对订单信息</h1>
+			<div class="first1">
+				<a class="shouhuo" href="#">收货信息</a>
+				<a class="xindi" href="#">使用新地址</a>
+				<div class="xiangxi">
+					<dl>
+						<dt class="l"><p><span>*</span>收货人：</p></dt>
+						<dd class="l"><input class="l" type="text" name="" id="" value="收货人姓名" />
+							<input  class="l inp2" type="radio" name="ral" id="" value="" checked="checked" /><p>先生</p>
+							<input class="l" type="radio" name="ral" id="" value="" /><p>小姐</p>
+						
+						</dd>
+						
+					</dl>
+					<dl>
+						<dt class="l"><p><span>*</span>所在区域：</p> </dt>
+						<dd class="l">
+							<select name="">
+								<option value="">请选择省</option>
+								<option value="">河南省</option>
+								<option value="">河北省</option>
+								<option value="">安徽省</option>
+								<option value="">广州省</option>
+								<option value="">山西省</option>
+								<option value="">陕西省</option>
+								<option value="">云南省</option>
+								<option value="">贵州省</option>
+								<option value="">新疆省</option>
+								
+							</select>
+							<select name="">
+								<option value="">请选择市</option>
+								<option value="">洛阳市</option>
+								<option value="">新乡</option>
+								<option value="">郑州</option>
+								<option value="">北京</option>
+								<option value="">天津</option>
+								<option value="">上海</option>
+								<option value="">保定</option>
+								<option value="">石家庄</option>
+								<option value="">唐山</option>
+								
+							</select>
+							<select name="">
+								<option value="">请选择区</option>
+								<option value="">大兴区</option>
+								<option value="">朝阳区</option>
+								<option value="">海淀区</option>
+								<option value="">东城区</option>
+								<option value="">西城区</option>
+								<option value="">昌平区</option>
+								
+								
+							</select>
+						
+						</dd>
+					</dl>
+					<dl>
+						<dt class="l"><p><span>*</span>详细地址：</p> </dt>
+						<dd class="l"><input type="text" name="" id="" value="详细地址" /></dd>
+					</dl>
+					<dl>
+						<dt class="l"><p><span>*</span>手机号码：</p> </dt>
+						<dd class="l"><input class="l" type="text" name="" id="" value="手机号码" />
+						<p class="l"><span>或</span>固定电话</p>
+						<input  class="l jianju" type="text" name="" id="" value="区号" />
+						<input class="l jianju" type="text" name="" id="" value="电话" />
+						<input class="l" type="text" name="" id="" value="分机" />
+						
+						
+						</dd>
+					</dl>
+					<dl>
+						<dt class="l"><p>邮政编码：</p> </dt>
+						<dd class="l"><input type="text" name="" id="" value="邮政编码" />
+						</dd>
+					</dl>
+					<div class="l queren">
+						确认收货人信息
+						
+					</div>
+					<div class="l quxiao">
+						取消
+					</div>
+					
+				</div>
+			
+			</div>
+			<div class="first1">
+				<a class="shouhuo" href="#">付款方式</a>
+				<a class="xindi" href="#">请点击收货信息以确实付款方式</a>
+			
+			</div>
+			<div class="first1">
+				<a class="shouhuo" href="#">送货方式</a>
+				<a class="xindi" href="#">请点击收货信息以确定收货方式</a>
+			
+			</div>
+			<div class="first1">
+				<a class="shouhuo" href="#">发票抬头</a>
+				<input class="zhongyao" type="text" name="" id="" value="个人" />			
+			</div>
+			<div class="first5">
+				<div class="all1">
+					<a class="B1" href="#">商品清单</a>
+					<a class="B2" href="#">返回购物车修改</a>
+				</div>
+				<div class="all2">
+					<p class="l b1">商品名称</p>
+					<p class="l b2">风尚价</p>
+					<p class="l b3">数量</p>
+					<p class="l b4">库存</p>
+					
+				</div>
+				<div class="all3">
+					<a class="l tupian" href="#"><img src="imgCart/7.jpg"/></a>
+					<div class="l all4">
+						<a class="shangpin" href="#">妙煮妇橘子传说去污霸</a>
+						<p>商品编号：306640 颜色：无 规格：无</p>
+						
+					</div>
+					<p class="l B3">¥179</p>
+					<p class="l B4">2 </p>
+					<p class="l B5">有货 </p>
+					
+				</div>
+				
+				
+			</div>
+			<div class="first6">
+				<a  class="dian1" href="javascript:;"><span class="span1"></span><p class="l">使用优惠券抵扣订单金额</p></a>
+				<div class="youhui"> 
+					<div class="all5">
+						<div class="l zuo5">
+							可用优惠券
+							
+						</div>
+						<div class="l you5">
+							
+						</div>
+					</div>
+					<div class="xia5">
+							<p>以下是此订单可用的优惠。您可以查看所有优惠券了解使用规则。</p>
+							<div class="er1">
+								<input class="l" type="radio" name="like" id="" value="" /><p class="l C1">200-25元</p>
+								<p class="l C2">注册送50元优惠券</p>
+								<p class="l C3">有效期至2016-10-18</p>
+							</div>
+							<div class="er1">
+								<input class="l" type="radio" name="like" id="" value="" /><p class="l C1">200-25元</p>
+								<p class="l C2">注册送50元优惠券</p>
+								<p class="l C3">有效期至2016-10-18</p>
+								
+							</div>
+							<a class="bu" href="#">不适用优惠券</a>
+						</div>
+					
+				</div>
+			</div>
+			<div class="first6">
+				<a  class=" dian2" href="javascript:;"><span class="span1"></span><p class="l">使用优惠券抵扣订单金额</p></a>
+				<div class="lijin">
+					<div class="all6">
+						<div class="left2">
+							使用礼金券
+							
+						</div>
+						<div class="right2">
+							
+						</div>
+						
+					</div>
+					<div class="f1">
+						<p class="l d1">请输入你手中的兑换码</p>
+						<input class="l d2" type="text" name="" id="" value="" />
+						<a  class="l d3" href="#">使用</a>
+						
+					</div>
+					
+				</div>
+			
+			</div>
+			
+			<div class="first6">
+				<a class="dian3" href="javascript:;"><span class="span1"></span><p class="l">订单备注</p></a>
+				<div class="bei">
+				<p>若您对订单有特殊要求，可在此备注，如不需要备注请不填。</p>
+				<textarea  name="" rows="" cols=""></textarea>
+					
+				</div>
+			</div>
+			
+		</div>
+		<div id="new" class="w">
+			<div class="commn">
+				<p class="l qian">商品总价：</p>
+				<p class="r">¥358</p>
+			</div>
+			<div class="commn">
+				<p class="l qian">促销优惠：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="commn">
+				<p class="l qian">积分抵扣：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="commn">
+				<p class="l qian">优  惠  券：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="commn"> 
+				<p class="l qian">礼  金  券：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="commn">
+				<p class="l qian">商品总价：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="commn">
+				<p class="l qian">商品总价：</p>
+				<p class="r">￥0</p>
+			</div>
+			<div class="ti">
+				<div class="l left1">
+					<div class="top4">
+						<p class="l">可获积分：</p>
+						<p class="r">¥2</p>
+						
+					</div>
+					<div class="xia4">
+						<p class="l">订单总计：</p>
+						<p class="yanse r">¥358</p>
+						
+					</div>
+					
+				</div>
+				<a class="r tijiao" href="#">提交订单</a>
+				
+			</div>
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$("#header  .box .box1").mouseover(function(){
+					$(this).find("ul").show();	
+				})
+				$("#header  .box .box1").mouseout(function(){
+					$(this).find("ul").hide();	
+				})
+				$("#header  .quan .yiji .shang .li1").mouseover(function(){
+					 
+					$(this).find("div").show()
+				})
+				$("#header  .quan .yiji .shang .li1").mouseout(function(){
+					
+					$(this).find("div").hide()
+				})
+				$("#footer").load("footer.html");
+				$(".xindi").click(function(){
+					$(".xiangxi").show();
+				})
+//				$(".dian1").click(function(){
+//					$(".youhui").toggleClass("common");
+//					$(this).find("span").toggleClass("comm")
+//				})
+//
+//				$(".dian2").click(function(){
+//					$(".lijin").toggleClass("common");
+//					$(this).find("span").toggleClass("comm")
+//				})
+//				$(".dian3").click(function(){
+//					$(".bei").toggleClass("common");
+//					$(this).find("span").toggleClass("comm")
+//				})
+				var onOff=true;
+				$(".dian1").click(function(){
+					if(onOff){
+						$(".youhui").show();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat 0 0"
+						})
+						
+					}else{
+						$(".youhui").hide();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat -16px 0"
+						})
+					}
+					onOff=!onOff;
+					
+				})
+				$(".dian3").click(function(){
+					if(onOff){
+						$(".bei").show();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat 0 0"
+						})
+						
+					}else{
+						$(".bei").hide();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat -16px 0"
+						})
+					}
+					onOff=!onOff;
+					
+				})
+				$(".dian2").click(function(){
+					if(onOff){
+						$(".lijin").show();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat 0 0"
+						})
+						
+					}else{
+						$(".lijin").hide();
+						$(this).find("span").css({
+							"background":"url(imgCart/5.png) no-repeat -16px 0"
+						})
+					}
+					onOff=!onOff;
+					
+				})
+				$.ajax({
+					url:"detail.json",
+					type:"get",
+					datatype:"json",
+					async:"true",
+					success:function(aaa){
+						var data2=aaa.data;
+						var str='';
+						var str1='';
+					}
+					
+				})
+				
+				
+				
+			})
+			
+		</script>
+			
+		
+	</body>
+</html>

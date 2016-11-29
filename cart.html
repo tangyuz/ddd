@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie1.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+		body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,input,p,img,a{padding:0;margin:0;}
+			
+			body{
+				font-size: 12px;
+				font-family: "微软雅黑";
+				height:3000px;
+				
+			}
+			.w{
+				width:901px;
+				margin:0 auto;
+			}
+			.l{
+				float:left;
+			}
+			.r{
+				float:right;
+			}
+			a{
+				color:#000000;
+				text-decoration: none;
+			}
+			a:hover{
+				color:red;
+			}
+			ul,li{
+				list-style: none;
+			}
+			a img{
+				border:0;
+			}
+			#header{
+				height:30px;
+				background:#eeeeee;
+				
+			}
+			#header .box{
+				height:22px;
+				margin-left: 688px;
+				padding-top: 8px;
+			}
+			#header .box .a2{
+				margin-left: 16px;
+			}
+			#header .box .a3{
+				margin-left: 11px;
+			}
+			#header .box .p1{
+				color:red;
+				padding-right: 15px;
+			
+				border-right: 1px solid #ccc;
+				height:13px;
+			}
+			#header .box .p2{
+				color:red;
+				
+				height:13px;
+			}
+			 #header .box .p3{
+				
+				margin-left: 15px;
+				height:13px;
+				cursor: pointer;
+				width:60px;
+				display: block;
+				line-height: 13px;
+				
+			}
+			 .box .box1{
+				width:60px;
+				height:22px;
+				background: #eeeeee;
+				position:relative;
+				
+			}
+			 .box .box1 ul {
+				position: absolute;
+				top:21px;
+				left:0px;
+				width:70px;
+				height:150px;
+				display: none;
+				border:1px solid #ccc;
+				padding-left: 10px;
+				background: #eee;
+				border-top:0;
+				border-bottom: 0;
+			}
+			.box .box1 ul li{
+				height:30px;
+				line-height: 30px;
+			}
+			#banner{
+				height:91px;
+				padding-top: 29px;
+				background:url(imgCart/1.png) no-repeat 420px 43px;
+				overflow: hidden;
+				
+			}
+			#banner .logo{
+				
+			}
+			#one{
+				height:54px;
+				background: url(imgCart/2.png) no-repeat right 0;
+			}
+			#one .wode{
+				margin-top: 5px;
+				margin-right: 20px;
+			}
+			#content{
+				min-height: 310px;
+				margin-bottom: 16px;
+			}
+			#content .top3{
+				min-height: 44px;
+				border-top: 1px solid #434343;
+			}
+			#content .top3 .Box1{
+				height:44px;
+				border-bottom: 1px solid #ccc;
+				background: #f3f3f3;
+				line-height: 44px;
+				border-left: 1px solid #ccc;
+				border-right:1px solid #ccc;
+			}
+			#content .top3 .Box1 .zi1{
+				margin-left: 128px;
+			}
+			#content .top3 .Box1 .zi2{
+				margin-left: 292px;
+			}
+			#content .top3 .Box1 .dizhi{
+				margin-left: 27px;
+				border:1px solid #ccc;
+				height: 22px;
+				margin-top:10px;
+				line-height: 22px;
+				width:105px;
+				background:#fff;
+				cursor: pointer;
+				position: relative;
+			}
+			#content .top3 .Box1 .dizhi .erji{
+				position:absolute;
+				left:0px;
+				top:22px;
+				width:390px;
+				height:188px;
+				border:1px solid #ccc;
+				padding:9px 20px;
+				background: #fff;
+				display: none;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang{
+				width:131px;
+				height:22px;
+				position:relative;
+				
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .jx,.nc{
+				width:46px;
+				height:22px;
+				border:1px solid #ccc;
+				display: block;
+				float:left;
+				line-height: 22px;
+				padding-left: 10px;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .jx{
+				margin-right: 5px;
+				background:url(imgCart/4.jpg) no-repeat 39px 9px;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .nc{
+				background:url(imgCart/3.jpg) no-repeat 39px 9px;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .sheng{
+				width:390px;
+				height:172px;
+				border:1px solid red;
+				position: absolute;
+				left:0;
+				top:22px;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .sheng li{
+				float:left;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .sheng li a{
+				padding:0 9px;
+				height:22px;
+				line-height: 22px;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .shi{
+				width:390px;
+				height:172px;
+				border:1px solid red;
+				position: absolute;
+				left:0;
+				top:22px;
+				display: none;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .shi li{
+				float:left;
+			}
+			#content .top3 .Box1 .dizhi .erji .xuanxiang .shi li a{
+				padding:0 9px;
+				height:22px;
+				line-height: 22px;
+			}
+			#content .top3 .Box1 .dizhi p{
+				width:70px;
+				padding:0 7px;
+				
+			}
+			#content .top3 .Box1 .dizhi .s3{
+				width:19px;
+				height:22px;
+				display: block;
+				background: url(imgCart/4.png) no-repeat 4px 8px;
+			}
+			#content .top3 .Box1 .zi3{
+				margin-left:63px;
+			}
+			#content .top3 .Box1 .zi4{
+				margin-left: 74px;
+			}
+			#content .top3 .Box2{
+				height:106px;
+				border-bottom: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				border-right:1px solid #ccc;
+			}
+			#content .top3 .Box2 .P1{
+				margin-top: 17px;
+				
+			}
+			#content .top3 .Box2 .jie{
+				margin-top: 37px;
+			}
+			#content .top3 .Box2 .jie .A4{
+				color:#0066CC;
+			}
+			#content .top3 .Box2 .P3{
+				margin-top: 48px;
+				margin-left: 81px;
+				color:#999;
+			}
+			#content .top3 .Box2 .P4{
+				margin-top: 48px;
+				margin-left: 104px;
+			}
+			#content .top3 .Box2 .jishu{
+				margin-top: 40px;
+				margin-left: 70px;
+				border:1px solid #ccc;
+			}
+			#content .top3 .Box2 .jishu .jian{
+				width:20px;
+				height:20px;
+				display: block;
+				border-right: 1px solid #ccc;
+				text-align: center;
+				color:#999;
+			}
+			#content .top3 .Box2 .jishu .jia{
+				width:20px;
+				height:20px;
+				display: block;
+				border-left: 1px solid#ccc;
+				text-align: center;
+				color:#999;
+			}
+			#content .top3 .Box2 .jishu a:hover{
+				text-decoration: none;
+			}
+			#content .top3 .Box2 .jishu input{
+				width:20px;
+				height:20px;
+				display: block;
+				float:left;
+				border:0;
+				text-align: center;
+				
+				
+			}
+			#content .top3 .Box2 .P5{
+				margin-top: 49px;
+				margin-left: 60px;
+			}
+			#content .top3 .Box2 .shan{
+				width:30px;
+				margin-left: 30px;
+				margin-top: 39px;
+		
+			}
+			#content .top3 .Box2 .shan a{
+				color:#0066CC;
+			}
+			
+			#content .top3 .Box3{
+				height:60px;
+				display: none;
+				border-left: 1px solid #ccc;
+				border-right:1px solid #ccc;
+
+			}
+			#content .top3 .Box3 .Ap{
+				background:url(imgCart/3.png) no-repeat  -120px 0;
+				width:15px;
+				height:15px;
+				margin-top: 13px;
+				margin-left: 10px;
+			}
+			#content .top3 .Box3 .A5{
+				color:#0066CC;
+				margin-left: 10px;
+				margin-top: 15px;
+			}
+			#content .top3 .Box3 .zongji{
+				margin-left: 609px;
+				margin-top:14px;
+				width:60px;
+				
+			}
+			#content .top3 .Box3 .zongji p{
+				color:#999;
+			}
+			#content .top3 .Box3 .jia{
+				margin-left: 90px;
+				margin-top: 16px;
+			}
+			#content .top3 .Box3 .jia p{
+				color:#999;
+			}
+			#content .top3 .Box4{
+				height:40px;
+				background: #eeeeee;
+				display: none;
+				border-left: 1px solid #ccc;
+				border-right:1px solid #ccc;
+			
+			}
+			#content .top3 .Box4 .Ap1{
+				color:#999;
+				margin-left: 10px;
+				line-height: 40px;
+				
+			}
+			#content .top3 .Box4 .Ap2{
+				margin-left: 542px;
+				line-height: 40px;
+			}
+			#content .top3 .Box4 .Ap3{
+				margin-left: 80px;
+				line-height: 40px;
+				
+			}
+			#content .top3 .Box4 .Ap3 .s1{
+				font-size: 12px;
+				color:red;
+				
+			}
+			#content .top3 .Box4 .Ap3 .s2{
+				font-size: 18px;
+				color:red;
+				
+			}
+			#content .xia3{
+				height:71px;
+				display: none;
+			}
+			#content .xia3 .gouwu{
+				width:92px;
+				height:34px;
+				line-height: 34px;
+				background: #f6f6f6;
+				margin-top: 20px;
+				text-align: center;
+			}
+			#content .xia3 .Ap4{
+				margin-top: 39px;
+				margin-left: 391px;
+				color:#999;
+			}
+			#content .xia3 .qujie{
+				width:175px;
+				height:42px;
+				background: red;
+				border-radius: 4px;
+				margin-top: 19px;
+				line-height: 42px;
+				color:#fff;
+				font-size: 18px;
+				text-align: center;
+			}
+			#content .xia3 a:hover{
+				text-decoration: none;
+			}
+			.zuihou{
+				width:900px;
+				height:44px;
+				border:1px solid #ccc;
+				line-height: 44px;
+				display: none;
+			}
+			.zuihou p{
+				float:left;
+				margin-left: 100px;
+			}
+			.zuihou a{
+				color:#999;
+				margin-left: 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="box">
+					<span class="l sp1"></span>
+					<a  class="l tui" href="javascript:;"></a>
+					
+					<a  class="l a1" href="javascript:;">登录</a>
+					<a  class="l a2" href="regis.html">免费注册</a>
+					<p  class="l p1">&nbsp;送50元</p>
+					<a  class="l a3" href="login.html">电话订购会员登录登录</a>
+					<p  class="l p2">&nbsp;送50元</p>
+					<div class="box1 l">
+						<a class=" p3">我的风尚<img src="imgindex/xiajian.jpg" alt="" /></a>
+						<ul>
+							<li class="first"><a href="#">我的订单</a></li>
+							<li><a href="#">我的积分</a></li>
+							<li><a href="#">我的优惠劵</a></li>
+							<li><a href="#">我的消息</a></li>
+							<li><a href="#">我的收藏</a></li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+		<div id="banner" class="w">
+			<a class="logo" href="index.html"><img src="imgCart/logo.gif"/></a>
+			
+		</div>
+		<div id="one" class="w">
+			<h1 class="l wode">我的购物车</h1>
+			<a class="l A2" href="#"><img src="imgCart/6.jpg"/></a>
+			
+			
+		</div>
+		<div id="content" class='w'>
+			<div class="top3">
+				<div class="Box1">
+					<p class="l zi1">商品</p>
+					<p class="l zi2">风尚价</p>
+					<div class="l dizhi">
+						 <p class="l add">江西  南昌市 </p>
+						 <span class="l s3"></span>
+						 <div class="erji">
+						 	<div class="xuanxiang">
+						 		<a class="jx" href="javascript:;">江西</a>
+						 		<a class="nc" href="javascript:;">南昌</a>
+						 		<ul class="sheng">
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江苏</a></li>
+						 			<li><a href="javascript:;">安徽</a></li>
+						 			<li><a href="javascript:;">山东</a></li>
+						 			<li><a href="javascript:;">甘肃</a></li>
+						 			<li><a href="javascript:;">浙江</a></li>
+						 			<li><a href="javascript:;">湖北</a></li>
+						 			<li><a href="javascript:;">湖南</a></li>
+						 			<li><a href="javascript:;">吉林</a></li>
+						 			<li><a href="javascript:;">天津</a></li>
+						 			<li><a href="javascript:;">上海</a></li>
+						 			<li><a href="javascript:;">重庆</a></li>
+						 			<li><a href="javascript:;">河北</a></li>
+						 			<li><a href="javascript:;">山西</a></li>
+						 			<li><a href="javascript:;">辽宁</a></li>
+						 			<li><a href="javascript:;">北京</a></li>
+						 			<li><a href="javascript:;">黑龙江</a></li>
+						 			<li><a href="javascript:;">福建</a></li>
+						 			<li><a href="javascript:;">河南</a></li>
+						 			<li><a href="javascript:;">广东</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			<li><a href="javascript:;">江西</a></li>
+						 			
+						 			
+						 		</ul>
+						 		<ul class="shi">
+						 			<li><a href="javascript:;">南昌市</a></li>
+						 			<li><a href="javascript:;">抚州市</a></li>
+						 			<li><a href="javascript:;">赣州市</a></li>
+						 			<li><a href="javascript:;">吉安市</a></li>
+						 			<li><a href="javascript:;">景德镇</a></li>
+						 			<li><a href="javascript:;">九江市</a></li>
+						 			<li><a href="javascript:;">萍乡市</a></li>
+						 			<li><a href="javascript:;">上饶市</a></li>
+						 			<li><a href="javascript:;">新余市</a></li>
+						 			<li><a href="javascript:;">新余市</a></li>
+						 			<li><a href="javascript:;">鹰潭市</a></li>
+						 			
+						 		</ul>
+						 		
+						 	</div>
+						 	
+						 </div>
+					</div>
+					
+					<p class="l zi3">数量</p>
+					<p class="l zi4">金额小计</p>					
+				</div>
+				<!--<div class="Box2">
+					<p class="l P1">风尚自营</p>
+					<a class="l A3" href="#"><img src="imgCart/2.jpg"/></a>
+					<div class="l jie">
+						<a class="A4" href="#">菲地怡时连衣裙</a>
+						<p class="P2">商品编号：310066 颜色：无 规格：无</p>
+					</div>
+					<p class="l P3">¥199</p>
+					<p class="l P4">有货  </p>
+					<div class="l jishu">
+						<a class="l jian" href="javascript:;">-</a>
+						<input type="text" name="" id="" value="1" min="1" />
+						<a  class="l jia" href="javsscript:;">+</a>
+						
+					</div>
+					<p class="l P5">¥ 3184</p>
+					<div class="l shan">
+						<a href="#">收藏</a>
+						<a href="#">删除</a>
+						
+					</div>
+				</div>-->
+				<div class="Box3">
+					<p class="l Ap"></p>
+					<a class="l A5" href="#">清空购物车</a>
+					<div class="l zongji">
+						<p class="r">总计：</p>
+						<p class="r">促销折扣：</p>
+						
+					</div>
+					<div class="l jia">
+						
+						<p class="P6">￥395</p>
+						<p>-¥0</p>
+						
+					</div>
+					
+				</div>
+				<div class="Box4">
+					<p class="l Ap1">您可获得积分：￥2.00</p>
+					<p class="l Ap2">总计(不含运费)： </p>
+					<p class="l Ap3"><span class="s1">¥</span><span class="s2 Pt">398</span></p>
+					
+				</div>
+				
+			</div>
+			<div class="xia3">
+				<a  class="l gouwu" href="#">继续购物</a>
+				<p class="l Ap4">填写送货地址 积分抵扣 优惠券使用 请点击-></p>
+				<a class="l qujie" href="#">去结算</a>
+				
+			</div>
+			<div class="zuihou">
+				<p>您的购物车暂时无任何商品，请尽快在风尚家庭购物选购商品吧！</p>
+				<a href="javascript:;">继续购物</a>
+				<a href="javascript:;">返回首页</a>
+				
+			</div>
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript" src="js/cart.js">
+//			$("#footer").load("footer.html")
+//			var cookies = document.cookie;//获取cookie
+//			
+//			
+//			alert(cookies)
+//			var arr=[];//用来存放id值
+//			var cook = cookies.split("; ");
+//			console.log(cook);
+//			for(var i = 0; i <cook.length;i++){
+//					var daid = cook[i].split("=");
+//					var nameid = daid[0]*1;
+//					if(!isNaN(nameid)){
+//						arr.push(daid[1]) ;
+//						
+//					}
+//			}
+//			console.log(arr);
+//		$.ajax({
+//			url:"detail.json",
+//			success:function(mag){
+//				var mag1 = mag.data;
+//				var str='';
+//				var str1='';
+//				var str2='';
+//				for(var i=0; i <arr.length;i++){
+//					for(var j = 0; j <mag1.length;j++){
+//						if(arr[i] == mag1[j].id){
+//							$(".Box3,.Box4,.xia3").show()
+//							var count = getCookie("count"+mag1[j].id);
+////							var mag1[j].name1*Number(count)
+//								str+='<div class="Box2">'
+//								str+='<p class="l P1">风尚自营</p>'
+//					            str+='<a class="l A3" href="#"><img width="50" height="50" src="'+mag1[j].img1+'"/></a>'
+//					            str+='<div class="l jie">'
+//						        str+='<a class="A4" href="#">'+mag1[j].name+'</a>'
+//						        str+='<p class="P2">商品编号：'+mag1[j].huohao+' 颜色：无 规格：无</p>'
+//					            str+='</div>'
+//					             str+='<p class="l P3" sdj="'+mag1[j].name1+'">¥'+mag1[j].name1+'</p>'
+//					            str+='<p class="l P4">有货  </p>'
+//					            str+='<div class="l jishu">' 
+//						        str+='<a class="l jian" dataid="'+mag1[j].id+'"  href="javascript:;">-</a>'
+//						        str+='<input type="text" dataid="'+mag1[j].id+'" name="" id="" value="'+count+'" min="'+1+'" />'
+//						        str+='<a  class="l jia" dataid="'+mag1[j].id+'" href="javascript:;">+</a>'
+//					            str+='</div>'
+//					            str+='<p class="l P5">'+mag1[j].name3*Number(count)+'</p>'
+//					            str+='<div class="l shan">'
+//						        str+='<a href="#">收藏</a>'
+//						        str+='<a class="shanchu" dataid="'+mag1[j].id+'" href="javascript:;">删除</a>'	
+//					            str+='</div>'
+//				                str+='</div>'
+//						}
+//						
+//					}
+//				}
+//				$(".Box3").before(str);
+//				var $num=$(".Box2").size()
+//				var $price=0;
+//				var gs=0;
+//				for(var i=0;i<$num;i++){
+//					$price+=Number($(".Box2").eq(i).find(".P5").html());
+//					gs+=Number($(".Box2").eq(i).find(".P5").html());
+//				}
+//				$(".Pt").html($price)
+//				$(".P6").html($price)
+//				
+//			}
+//		})
+//		
+//		//************删除******************
+//		$(".top3").on("click",".shanchu",function(){
+//			if(confirm("确定要从购物车中删除此商品？")){
+//				var dataid=$(this).attr("dataid")
+//				removeCookie(dataid);
+//				removeCookie("count"+dataid);
+//				//window.location.reload()
+////				if($num==0){
+////					alert(1)
+////					$(this).parents(".Box3").siblings().hide();
+////					$(this).parents(".Box3").hide()
+////					$(".xia3").hide()
+////				}
+//				
+//						var cookies = document.cookie;//获取cookie
+//						alert(cookies)
+//						var arr=[];//用来存放id值
+//						var cook = cookies.split("; ");
+//						console.log(cook);
+//						for(var i = 0; i <cook.length;i++){
+//								var daid = cook[i].split("=");
+//								var nameid = daid[0]*1;
+//								if(!isNaN(nameid)){
+//									arr.push(daid[1]) ;	
+//								}
+//						}
+//						if(arr.length==0){
+//							alert(1)
+//							$(".Box3").hide();
+//							$(".Box4").hide();
+//							$(".xia3").hide();
+//							$(".zuihou").show();
+//						}
+//				var xiaoji=$(this).parents(".Box2").find(".P5").html()
+//				var zongjine=$(".Pt").html();
+//				var cha=Number(zongjine)-Number(xiaoji);
+//				alert(cha)
+////				var $num=$(".Box2").size()
+////				var $price=0
+////				for(var i=0;i<$num;i++){
+////				
+////					$price+=Number($(".Box2").eq(i).find(".P5").html());
+////				}
+//				$(".Pt").html(cha)
+//				$(".P6").html(cha)
+//				$(this).parents(".Box2").hide();
+//				
+//				$(this).parents(".Box2").find(".P5").html(0);
+//
+//			}
+//		})
+//		//***************加******************
+//		$(".top3").on("click",".jia",function(){	
+//			var num1=Number($(this).prev().val());
+//			num1++;
+//			$(this).prev().val(num1);
+//			var dataid=$(this).attr("dataid")
+//			var count = Number($(this).prev().val());
+//			setCookie("count"+dataid,count)	
+//			var zongshu=getCookie("count"+dataid);
+//			var danjia=$(this).parents(".Box2").find(".P3").attr("sdj");
+//			var zongjia=Number(danjia)*Number(zongshu);
+//			$(this).parents(".Box2").find(".P5").text(zongjia)
+//			
+//			var $num=$(".Box2").size()
+//			var $price=0
+//			for(var i=0;i<$num;i++){
+//			
+//				$price+=Number($(".Box2").eq(i).find(".P5").html());
+//			
+//			}
+//			$(".Pt").html($price)
+//			$(".P6").html($price)
+//			
+//		})
+//
+//		
+//		
+//		//******************减***************
+//		$(".top3").on("click",".jian",function(){
+//			var num1=Number($(this).next().val());
+//			num1--;
+//			if(num1<0){
+//				num1=0;
+//			}
+//			$(this).next().val(num1);
+//			var dataid=$(this).attr("dataid")
+//			var count = Number($(this).next().val());
+//			setCookie("count"+dataid,count)	
+//			var zongshu=getCookie("count"+dataid);
+//			var danjia=$(this).parents(".Box2").find(".P3").attr("sdj");
+//			var zongjia=Number(danjia)*Number(zongshu);
+//			$(this).parents(".Box2").find(".P5").text(zongjia)
+//		
+//
+//			var $num=$(".Box2").size()
+//			var $price=0
+//			for(var i=0;i<$num;i++){
+//			
+//				$price+=Number($(".Box2").eq(i).find(".P5").html());
+//			}
+//			$(".Pt").html($price)
+//			$(".P6").html($price)
+//		})
+//		$(".xia3").on("click",".qujie",function(){
+//			window.location.href="order.html"
+//		})
+//		//***************头部的二级菜单
+//				$("#header .box .box1").mouseover(function(){
+//					$(this).find("ul").show();	
+//				})
+//				$("#header .box .box1").mouseout(function(){
+//					$(this).find("ul").hide();	
+//				})
+//				
+//				//******************头部的登录
+//				if(getCookie("boo")=='true'){
+//					var name = getCookie("name");
+//					$("#header  .box .sp1").html('您好，'+name);	
+//					$("#header  .box .tui").html("退出")
+//					$("#header  .box .a1").html("");	
+//					$(" .box").css({
+//						"margin-left":"750px"
+//					})
+//				}else{
+//					$("#header  .box .a1").html("登录");	
+//					$("#header  .box .sp1").html('');
+//					
+//				}
+//				$("#header .box .a1").click(function(){
+//					window.location.href="login.html";	
+//				})
+//				$("#header .box .tui").click(function(){
+//					removeCookie("boo");
+//					console.log(document.cookie)
+//					$("#header .top .box .sp1").html('');
+//					$("#header .top .box .a1").html("登录");
+//					$("#header .top .box .tui").html("")
+//					$(".top .box").css({
+//						"margin-left":"863px"
+//					})
+//					window.location.href="index.html"
+//				})
+//				//********************邮寄地址
+//				$(".dizhi").mouseover(function(){
+//					$(".erji").show();
+//				})
+//				$(".dizhi").mouseout(function(){
+//					$(".erji").hide();
+//					
+//				})
+//				//**********省会
+//				$(".jx").click(function(){
+//					$(".sheng").show()
+//					$(".shi").hide();
+//					$(this).css({
+//						"background":"url(imgCart/4.jpg) no-repeat 39px 9px",
+//
+//				
+//					})
+//					$(this).next().css({
+//						"background":"url(imgCart/3.jpg) no-repeat 39px 9px"
+//					})
+//				})
+//				//************市区
+//				$(".nc").click(function(){
+//					$(".sheng").hide();
+//					$(".shi").show();
+//					$(this).css({
+//						"background":"url(imgCart/4.jpg) no-repeat 39px 9px"
+//					})
+//					$(this).prev().css({
+//						"background":"url(imgCart/3.jpg) no-repeat 39px 9px"
+//					})
+//				})
+//				
+//				$(".sheng li a").click(function(){
+//					   num = $(this).text()
+//					   $(".sheng a").css({
+//					   	"background":"#fff",
+//					   	"color":"#000"
+//					   })
+//					   $(this).css({
+//					   	"background":"blue",
+//					   	"color":"#fff"
+//					   })
+//					   
+//				})
+//				$(".shi a").click(function(){
+//					  var num1 = $(this).text()
+//					  $(".add").text(num+num1)
+//					  
+//				})
+//				//************删除商品***************
+////				$("body").on("click",".shanchu",function(){
+////					$(this).parents(".Box2").hide();
+////					var dataid=$(this).attr("dataid");
+////					deleteCookie(dataid)
+////				})
+//				//*********清空购物车************
+//				$("body").on("click",".A5",function(){
+//					$(this).parents(".Box3").siblings().hide();
+//					$(this).parents(".Box3").hide()
+//					$(".xia3").hide()
+//					$(".zuihou").show();
+//					var shan = $(".shanchu").size();
+//					
+//					for(i=0;i<shan;i++){
+//						var dataid=$(".shanchu").eq(i).attr("dataid")
+//						alert(dataid)
+//						removeCookie(dataid);
+//					}
+//				})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+			
+		</script>
+		<script type="text/javascript" src="js/foot.js">
+			
+		</script>
+		<script type="text/javascript" src="js/header1.js">
+			
+		</script>
+		<script type="text/javascript"src="js/cookie.js">
+			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header1.css"/>
+		
+		<style type="text/css">
+			#yifu{
+				height:39px;
+				background:#eeeeee;
+				width:1198px;
+				border:1px solid #ccc;
+				line-height: 38px;
+				margin-bottom: 10px;
+			}
+			#yifu .a11{
+				font-size: 14px;
+				margin-left: 20px;
+				margin-right: 8px;
+			}
+			#yifu .sp1{
+				
+			}
+			#yifu .a22{
+				color:#999;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			#yifu .a33{
+				color:#999;
+				margin-left: 5px;
+			}
+			
+			#banner{
+				height:596px;
+				margin-bottom: 10px;
+				position:relative;
+			}
+			#banner .bigpic{
+				position:absolute;
+				width:474px;
+				height:474px;
+				left:478px;
+				top:-1px;
+				overflow: hidden;
+				border:2px solid #ccc;
+				display: none;
+				background:#fff;
+				
+			}
+			.yi11{
+				position:relative;
+			}
+			.yi11 .zhezhao{
+				width:100%;
+				height:100%;
+				display: block;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+
+
+.yi11 .mark{ width: 240px; height: 240px; border: 1px solid #000; background: #fff; filter: alpha(opacity: 30); opacity: 0.3; position: absolute; top: 0; left: 0; display:none;}
+#banner .bigpic img { position:absolute; top: -30px; left: -80px; }
+			#banner .Dleft{
+				width:478px;
+				height:594px;
+				border:1px solid #ccc;
+			}
+			#banner .Dleft .yi11{
+				width:478px;
+				height:479px;
+				position:relative;
+			}
+			#banner .Dleft .er22{
+				width:478px;
+				height:70px;
+				border-bottom: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+			}
+			#banner .Dleft .er22 .Lbtn{
+				width:16px;
+				height:70px;
+				display: block;
+				background: url(imgDatail/15.gif) no-repeat;
+				border-right: 1px solid #ccc;
+			}
+			#banner .Dleft .er22 .Rbtn{
+				width:16px;
+				height:70px;
+				display: block;
+				background: url(imgDatail/16.gif) no-repeat;
+				border-left: 1px solid #ccc;
+			}
+			#banner .Dleft .er22 .zhong1{
+				width:444px;
+				height:70px;
+			}
+			#banner .Dleft .er22 .zhong1 .zhonga{
+				display: block;
+				width:50px;
+				height:50px;
+				margin:9px;
+				border:1px solid #ccc;
+			}
+			#banner .Dleft .san33{
+				height:16px;
+				width:438px;
+				padding:14px 20px;
+				
+			}
+			#banner .Dleft .san33 a{
+				width:16px;
+				height:16px;
+				display: block;
+				float:left;
+				margin-right: 4px;
+			}
+			#banner .Dleft .san33 .jing1{
+				background:url(imgDatail/jing.png) no-repeat 0 -144px;
+			}
+			#banner .Dleft .san33 .jing2{
+				background:url(imgDatail/jing.png) no-repeat 0 -96px;
+			}
+			#banner .Dleft .san33 .jing3{
+				background:url(imgDatail/jing.png) no-repeat 0 -160px;
+			}
+			#banner .Dleft .san33 .jing4{
+				background:url(imgDatail/jing.png) no-repeat 0 -176px;
+			}
+			#banner .Dleft .san33 .jing5{
+				background:url(imgDatail/jing.png) no-repeat 0 -1200px;
+			}
+			#banner .Dleft .san33 .jing6{
+				background:url(imgDatail/11.gif) no-repeat 0 -64px;
+				width:36px;
+				height:16px;
+				text-align: center;
+				
+			}#banner .Dleft .san33 .shou{
+				background:url(imgDatail/10.png) no-repeat 0 0px;
+				width:73px;
+				height:16px;
+				display: block;
+				height:16px;
+				float:right;
+				
+			}
+			#banner .Dright{
+				width:698px;
+				height:594px;
+			}
+			#banner .Dright .zuo4{
+				width:440px;
+				height:594px;
+				margin-right: 20px;
+				
+			}
+			#banner .Dright .zuo4 h2{
+				height:42px;
+				border-bottom: 1px solid #ccc;
+				margin-bottom: 20px;
+			}
+			#banner .Dright .zuo4 .huohao{
+				color:#999;
+				margin-bottom: 30px;
+			}
+			#banner .Dright .zuo4 .huohao span{
+				color:#000000;
+				
+			}
+			#banner .Dright .zuo4 .jiage{
+				color:#999;
+				height:30px;
+				border-bottom: 1px solid #ccc;
+			}
+			#banner .Dright .zuo4 .jiage span{
+				color:red;
+			}
+			#banner .Dright .zuo4 .ping{
+				height:66px;
+				border-bottom: 1px solid #ccc;
+				
+			}
+			#banner .Dright .zuo4 .ping .shuliang{
+				height:11px;
+				padding-top: 16px;
+			}
+			#banner .Dright .zuo4 .ping .shuliang .sp4{
+				margin-left:66px;
+				color:red;
+			}
+			#banner .Dright .zuo4 .ping .shuliang .sp5{
+				margin-left: 128px;
+				color:#0066CC;
+			}
+			#banner .Dright .zuo4 .ping .wenzi{
+				height:39px;
+				line-height: 39px;
+			}
+			#banner .Dright .zuo4 .ping .wenzi p{
+				color:#999;
+			}
+			#banner .Dright .zuo4 .ping .wenzi .ppp1{
+				margin-left: 40px;
+			}
+			#banner .Dright .zuo4 .ping .wenzi .ppp2{
+				margin-left: 89px;
+			}
+			#banner .Dright .zuo4 .ping .wenzi .ppp3{
+				margin-left: 96px;
+			}
+			#banner .Dright .zuo4 .ku{
+				height:59px;
+			}
+			#banner .Dright .zuo4 .ku .ppp4{
+				color:#999;
+				margin-top: 22px;
+			}
+			#banner .Dright .zuo4 .ku .xiala{
+				height:23px;
+				width:87px;
+				border:1px solid #ccc;
+				margin-top: 17px;
+				line-height: 23px;
+			}
+			#banner .Dright .zuo4 .ku .ppp5{
+				margin-top: 22px;
+				margin-left: 5px;
+			}
+			#banner .Dright .zuo4 .goumai{
+				height:44px;
+			}
+			#banner .Dright .zuo4 .goumai .ppp6{
+				color:#999;
+				margin-top: 5px;
+			}
+			#banner .Dright .zuo4 .goumai .inp6{
+				width:100px;
+				height:23px;
+				line-height: 23px;
+				text-align: center;
+			}
+			#banner .Dright .zuo4 .goumai .inp6 .jianhao{
+				width:23px;
+				height:23px;
+				line-height: 23px;
+				text-align: center;
+				cursor:pointer
+			}
+			#banner .Dright .zuo4 .goumai .jiahao{
+				width:23px;
+				height:23px;
+				cursor: pointer;
+			}
+			#banner .Dright .zuo4 .goumai .inp6 .inpu{
+				text-align: center;
+				height:23px;
+				width:50px;
+			}
+			#banner .Dright .zuo4 .goumai .ppp7{
+				margin-top: 5px;
+				margin-left: 30px;
+			}
+			#banner .Dright .you4{
+				width:236px;
+				height:366px;
+				border:1px solid #ccc;
+				background: url(imgDatail/14.jpg) no-repeat 69px 213px;
+			}
+			#banner .Dright .you4 .difei{
+				height:54px;
+				line-height: 54px;
+				border-bottom: 1px solid #ccc;
+			}
+			#banner .Dright .you4 .difei .fei1{
+				margin-left: 20px;
+				color:#999;
+			}
+			#banner .Dright .you4 .difei .fei2{
+				color:#0066CC;
+			}
+			#banner .Dright .you4 .A1{
+				height:42px;
+				display: block;
+				background: #eeeeee;
+				line-height: 42px;
+				color:#0066CC;
+				text-align: center;
+			}
+			#banner .Dright .you4 .wang{
+				height:66px;
+				width:234px;
+				background: #22c1e9;
+				border:2px dashed #ccc;
+				padding-top: 10px;
+				text-align: center;
+			}
+			#banner .Dright .you4 .wang p{
+				color:#fff;
+				line-height: 18px;
+			}
+			#banner .Dright .you4 .biao{
+				text-align: center;
+				height:34px;
+				line-height: 34px;
+			}
+			#banner .Dright .you4 .p8{
+				margin-left: 10px;
+				margin-top: 118px;
+			}
+			
+			#banner1{
+				height:4089px;
+				margin-bottom: 8px;
+			}
+			#banner1 .zuo3{
+				height:1155px;
+				width:238px;
+			}
+			#banner1 .zuo3 .yi1{
+				height:38px;
+				border:1px solid #dddddd;
+				border-bottom: 0;
+				line-height: 38px;
+				padding-left: 10px;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			#banner1 .zuo3 .er{
+				height:50px;
+				border:1px solid #dddddd;
+				margin-bottom: 10px;
+				padding-left: 10px;
+				padding-top: 9px;
+			}
+			#banner1 .zuo3 .er a{
+				margin-right: 65px;
+				color:#999;
+				display: block;
+				float:left;
+				line-height: 22px;
+			}
+			#banner1 .zuo3 .si{
+				height:72px;
+				border:1px solid #dddddd;
+				margin-bottom: 10px;
+				padding-left: 10px;
+				padding-top: 9px;
+			}
+			#banner1 .zuo3 .si a{
+				display: block;
+				float:left;
+				width:70px;
+				line-height: 22px;
+				color:#999;
+			}
+			#banner1 .zuo3 .six{
+				height:873px;
+				border:1px solid #dddddd;
+				overflow: hidden;
+			}
+			#banner1 .zuo3 .six .tupian{
+				width:190px;
+				height:157px;
+				border-bottom: 1px dotted #ccc;
+				margin-left: 25px;
+				margin-top: 15px;
+			}
+			#banner1 .zuo3 .six .tupian .aa1,.aa2,.aa3{
+				width:190px;
+				text-align: center;
+				display: block;
+				color:#999;
+			}
+			#banner1 .zuo3 .six .tupian .aa3{
+				color:red;
+			}
+			#banner1 .zuo3 .six .last{
+				border:0;
+			}
+			#banner1 .you3{
+				width:948px;
+				height:4089px;
+				position:relative;
+			}
+			#banner1 .you3 .pingjia{
+				display: none;
+				height:759px;
+				border:1px solid #ccc;
+				border-top: 0;
+				position: absolute;
+				left:0;
+				top:40px;
+				display: none;
+				padding:10px;
+				width:926px
+			}
+			#banner1 .you3 .peisong{
+				display: none;
+				height:759px;
+				border:1px solid #ccc;
+				border-top: 0;
+				position: absolute;
+				left:0;
+				top:40px;
+				display: block;
+				padding:10px;
+				width:926px;
+			}
+			#banner1 .you3 .peisong .zhifu{
+				height:41px;
+				background: #f39800;
+				color:#fff;
+				line-height: 41px;
+			}
+			#banner1 .you3 .peisong .zhifu1{
+				width:854px;
+				height:132px;
+				border-bottom: 1px solid #ccc;
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			#banner1 .you3 .peisong .zhifu1 .z1{
+				width:40px;
+				height:132px;
+				font-size: 50px;
+				color:#f60;
+			}
+			#banner1 .you3 .peisong .zhifu1 .zhifu2{
+				height:132px;
+				width:807px;
+			}
+			#banner1 .you3 .peisong .zhifu1 .zhifu2 .z2{
+				color:#f60;
+				margin-bottom: 23px;
+			}
+			#banner1 .you3 .peisong .zhifu1 .zhifu2 .z3{
+				background: #f2efe6;
+				width:420px;
+				height:38px;
+				border:1px solid #ccc;
+				line-height: 38px;
+				padding-left: 20px;
+			}
+			#banner1 .you3 .guke{
+				display: none;
+				height:1873px;
+				border:1px solid #ccc;
+				border-top: 0;
+				position: absolute;
+				left:0;
+				top:40px;
+				display: none;
+				padding:10px;
+				width:926px;
+			}
+			#banner1 .you3 .guke .disan{
+				height:77px;
+				width:928px;
+				border-bottom: 1px solid #ccc;
+				overflow: hidden;
+				background: #f5f5f5;
+			}
+			#banner1 .you3 .guke .disan .all7{
+				width:300px;
+				height:34px;
+				margin-left: 20px;
+				margin-top: 22px;
+			}
+			#banner1 .you3 .guke .disan .all7 .e4{
+				color:#f77459;
+			}
+			#banner1 .you3 .guke .disan .all7 span{
+				color:#f77459;
+			}
+			#banner1 .you3 .guke .disan .zixun{
+				display: block;
+				float:left;
+				margin-top: 20px;
+				margin-left: 477px;
+				background: #f77459;
+				border:1px solid red;
+				color:#fff;
+				width:110px;
+				height:35px;
+				text-align: center;
+				line-height: 35px;
+				border-radius: 3px;
+			}
+			#banner1 .you3 .guke .disan1{
+				height:135px;
+				width:928px;
+				margin-top: 20px;
+			}
+			#banner1 .you3 .guke .disan1 .top5{
+				height:50px;
+			}
+			#banner1 .you3 .guke .disan1 .top5 .zhong2{
+				height:39px;
+				margin-left: 20px;
+				margin-top: 12px;
+			}
+			#banner1 .you3 .guke .disan1 .top5 .e7{
+				margin-top: 35px;
+				float:right
+
+			}
+			#banner1 .you3 .guke .disan1 .foo5{
+				height:50px;
+				margin-top: 20px;
+				
+			}
+			#banner1 .you3 .guke .disan1 .foo5 .e5{
+				width:62px;
+				height:55px;
+				display: block;
+				margin-top: 5px;
+				margin-left: 10px;
+			}
+			#banner1 .you3 .guke .disan1 .foo5 .e6{
+				height:60px;
+				background: #f5f5f5;
+				min-width: 200px;
+				margin-left: 23px;
+				max-width: 700px;
+				
+			}
+			#banner1 .you3 .pingjia .div2{
+				height:57px;
+				
+				border-bottom: 1px solid #ccc;
+				width:928px;
+				background: #f5f5f5;
+				
+			}
+			#banner1 .you3 .pingjia .div2 .e1{
+				color:red;
+				font-size: 50px;
+				width:137px;
+				line-height: 57px;
+				
+			}
+			#banner1 .you3 .pingjia .div2 .shuang{
+				height:50px;
+				margin-left:10px;
+				margin-top: 10px;
+			}
+			#banner1 .you3 .pingjia .div2 .shuang .haoping{
+				color:#f60;
+			}
+			#banner1 .you3 .pingjia .div1{
+				height:82px;
+				margin-top: 25px;
+			}
+			#banner1 .you3 .pingjia .div1 .daa{
+				display: block;
+				width:62px;
+				height:82px;
+			}
+			#banner1 .you3 .pingjia .div1 .daa a{
+				margin-left: 10px;
+			}
+			#banner1 .you3 .pingjia .div1 .wenzi1{
+				height:40px;
+				margin-top: 12px;
+				margin-left: 20px;
+			
+			}
+			#banner1 .you3 .pingjia .div1 .wenzi1 .e3{
+				width:500px;
+				height:40px;
+			}
+			#banner1 .you3 .pingjia .div1 .wenzi1 .beijing{
+				width:70px;
+				background:url(imgDatail/x1.gif);
+				height:13px;
+				margin-bottom: 15px;
+			}
+			#banner1 .you3 .pingjia .div1 .wenzi1 .yanse{
+				color:#f1320a;
+				margin-bottom: 15px;
+			}
+			#banner1 .you3 .xuan{
+				height:38px;
+				line-height: 38px;
+
+			}
+			#banner1 .you3 .xuan li{
+				border-top:1px solid #ccc;
+				border-left:1px solid #ccc;
+				border-bottom: 1px solid red;
+			}
+			#banner1 .you3 .xuan li.last{
+				width:515px;
+				height:38px;
+				border-right:1px solid #ccc;
+			}
+			#banner1 .you3 .xuan li a{
+				padding:0 20px;
+				color:#999;
+			}
+			#banner1 .you3 .xuan li a span{
+				color:#0066CC;
+			}
+			#banner1 .you3 .xiang{
+				height:1568px;
+				border:1px solid #ccc;
+				border-top: 0;
+				background: url(imgDatail/7.jpg) no-repeat;
+				padding-top: 2483px;
+				position:absolute;
+				left:0;
+				top:40px;
+				display: none;
+			}
+			#banner1 .you3 .xiang .shuo{
+				width:928px;
+				height:549px;
+				margin-left: 10px;
+				background: url(imgDatail/13.jpg) no-repeat 0 525px;
+			}
+			#banner1 .you3 .xiang img{
+				margin-left: 250px;
+			}
+			#banner1 .you3 .xiang .shuo h4{
+				height:28px;
+				background: #faf3f0;
+				line-height: 28px;
+			}
+			#banner1 .you3 .xiang .shuo p{
+					line-height: 22px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			
+		</div>
+		<div id="yifu" class="w">
+			<a class="a11" href="#">所有类别</a>
+			<span class="sp1">
+				<img src="imgDatail/1.jpg"/>
+			</span>
+			<a class="a22" href="#">服饰配件</a>
+			<span class="sp2">
+				<img src="imgDatail/1.jpg"/>
+			</span>
+			<a class="a33" href="#">服装内衣</a>
+			
+		</div>
+		<div class="w" id="banner">
+			<div class="l Dleft">
+				<!--<div class="yi11">
+					<span class="mark"></span>
+					<span class="zhezhao"></span>
+					<img class="smallpic" width="478" height="478" src="imgDatail/18.jpg"/>
+					
+				</div>
+				<div class="er22">
+					<a href="javascript:;" class="l Lbtn">
+						
+					</a>
+					<div class="l zhong1">
+						<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="imgDatail/18.jpg"/></a>
+						<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="imgDatail/30.jpg"/></a>
+						
+						
+					</div>
+					<a href="javascript:;" class="r Rbtn">
+						
+					</a>
+					
+				</div>-->
+				<!--<div class="san33">
+					<span style=" display:block;" class="l sp3">分享到：</span>
+					<a class="jing1" href="#"></a>
+					<a class="jing2" href="#"></a>
+					<a class="jing3" href="#"></a>
+					<a class="jing4" href="#"></a>
+					<a class="jing5" href="#"></a>
+					<a class="jing6" href="#">0</a>
+					<a class="shou" href="#"></a>
+					
+				</div>
+				<div class="bigpic">
+					<img class="bigPic"  width="956" height="956" src="imgDatail/18.jpg"/>
+					
+				</div>-->
+				
+			</div>
+			<div class="r Dright">
+				<div class="l zuo4">
+					<!--<h2>迪菲怡时尚绣珠亮片连衣裙</h2>
+					<p class="huohao">货&nbsp;&nbsp; &nbsp; &nbsp;号：<span>310066</span></p>
+					<p class="jiage">风尚价格：<span>¥199</span></span></p>
+					<div class="ping">
+						<div class="shuliang">
+							<span class="sp4">1</span>
+							<span class="sp5">2000</span>
+							
+						</div>
+						<div class="wenzi">
+							<p class="l ppp1">元/网购积分</p>
+							<p class="l ppp2">件/月销量</p>
+							<p class="l ppp3">暂无评价</p>
+							
+						</div>
+						
+					</div>
+					<div class="ku">
+						<p class="l ppp4">库&nbsp;&nbsp; &nbsp; &nbsp;存：</p>
+						<div class="l xiala">
+							江西 南昌市
+						</div>
+						<p class="l ppp5">现货</p>
+						
+					</div>
+					<div class="goumai">
+						<p class="l ppp6">购买数量：</p>
+						<div class="l inp6">
+							<p class="jianhao">-</p>
+							<input class="l inpu" type="number" min="1" name="" id="" value="1" />
+							<p class="jiahao">+</p>
+						</div>
+						
+						<p class="l ppp7">件&nbsp; &nbsp;   已选择“无  无码”</p>
+					</div>
+					<div class="A2">
+						<a href="#"><img src="imgDatail/20.png"/></a>
+						<a href="#"><img src="imgDatail/21.png"/></a>
+						
+					</div>-->
+				</div>
+				<div class="l you4">
+					<div class="difei">
+						<p class="l fei1">品牌名称：</p>
+						<a class="l fei2" href="#">迪菲怡</a>
+						
+					</div>
+					<a class="A1" href="#">进入品牌页面看更多</a>
+					<div class="wang">
+						<p>[网购特惠]</p>
+						<p>支付宝/银联支付/微信支付</p>
+						<p>享受再减10元优惠</p>
+						
+					</div>
+					<h2 class="biao">手机扫码订购</h2>
+					<p class="p8">货到付款 / 支付宝 / 银联支付 / 微信支付</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<div id="banner1" class="w">
+			<div class="l zuo3">
+				<div class="yi1">
+					相关分类
+					
+				</div>
+				<div class="er">
+					<a href="#">服装内衣</a>
+					<a href="#">箱包</a>
+					<a href="#">鞋帽配饰</a>
+					<a href="#">手表</a>
+					
+				</div>
+				<div class="yi1">
+					同类其他品牌
+				</div>
+				<div class="si">
+					<a href="#">布兰巴丽</a>
+					<a href="#">微莎蒂娜</a>
+					<a href="#">北极绒</a>
+					<a href="#">桃菲</a>
+					<a href="#">红豆</a>
+					<a href="#">小余儿</a>
+					<a href="#">美貂夫人</a>
+					<a href="#">浪莎</a>
+					
+				</div>
+				<div class="yi1">
+					同类商品
+					
+				</div>
+				<div class="six">
+					<div class="tupian">
+						<a class="aa1" href="#"><img src="imgDatail/2.jpg"/></a>
+						<a class="aa2" href="#">鹿王奥普蒂斯蚕丝上衣套装</a>
+						<a class="aa3" href="#">￥299</a>
+					</div>
+					<div class="tupian">
+						<a class="aa1" href="#"><img src="imgDatail/3.jpg"/></a>
+						<a class="aa2" href="#">鹿王奥普蒂斯蚕丝上衣套装</a>
+						<a class="aa3" href="#">￥299</a>
+					</div>
+					<div class="tupian">
+						<a class="aa1" href="#"><img src="imgDatail/4.jpg"/></a>
+						<a class="aa2" href="#">鹿王奥普蒂斯蚕丝上衣套装</a>
+						<a class="aa3" href="#">￥299</a>
+					</div>
+					<div class="tupian">
+						<a class="aa1" href="#"><img src="imgDatail/5.jpg"/></a>
+						<a class="aa2" href="#">鹿王奥普蒂斯蚕丝上衣套装</a>
+						<a class="aa3" href="#">￥299</a>
+					</div>
+					<div class="last tupian">
+						<a class="aa1" href="#"><img src="imgDatail/6.jpg"/></a>
+						<a class="aa2" href="#">鹿王奥普蒂斯蚕丝上衣套装</a>
+						<a class="aa3" href="#">￥299</a>
+					</div>
+					
+					
+					
+				</div>
+				
+			</div>
+			<!--//************选此卡**********-->
+			<div class="r you3">
+				<ul class="xuan">
+					<li class="l"><a href="javascript:;">商品详情</a></li>
+					<li class="l"><a href="javascript:;">支付/配送/配送货</a></li>
+					<li class="l"><a href="javascript:;">顾客回答&nbsp;<span>12</span></a></li>
+					<li class="l"><a href="javascript:;">累计评价&nbsp;<span>0</span></a></li>
+					<li class="l last"></li>
+				</ul>
+				<div class="xiang abc">
+					<div class="shuo">
+						<h4>主品说明</h4>
+						<p>连衣裙 *2条</p>
+						<h4>赠品说明</h4>
+						<p>披肩*1 </p>
+						<h4>规格参数</h4>
+						<p>1.主品：迪菲怡时尚重工钉珠亮片连衣裙 *2条 2.赠品：披肩*1 3.尺码：均码 （身高155-175cm，胸围80- 110cm，臀围90-120cm） 4.材质：100%聚酯纤维 里料 透气网纱面料 5.颜色：迷情黑色、妖娆蓝色 </p>
+						<h4>功能说明 </h4>
+						<p>"1.健康必备：安心，纯净，柔软，防缩，透气； 2.扮靓必备：显瘦、时尚、修身、知性、得体、新款引荐 3.春秋必备：2个不同款式，女性连衣裙必备 款式特色： 4.面料：网纱里料，不起球、不退色、不易变形、容易清洗、容易打理染色性好，即洗即干 5.无袖这一款式休闲聚会上班、居家外出等场所都可以穿，不挑人不挑时间和地点的万能款 6.适合搭配小披肩，丝巾，可以披长款的外套，鞋子最好是高跟鞋，尖头和方头为佳。 7.这是一个重工款，衣衣的钉珠，和亮片，都是人工钉的，订起来超级费力。 8.立体装饰，手工钉珠，重工金线刺绣。款式独特，不挑身材，不挑年纪，彰显奢侈稀缺品质，高档贵气。 9.全内衬设计，高弹网纱材质，夏天透气束缚，确保不会挂到皮肤优质面料 ，做工复杂精细，弹性很好，上身不变形。 10。经典手摇拉花，立显曲线身段，经典圆领装饰，修饰颈部，展现白皙娇嫩，高贵迷人" </p>
+						<h4>商品特性</h4>
+						<p>"1.迷情黑色 黑色永远代表着高贵神秘，略带忧郁无邪的独色。 经典无袖背心设计的延续，轻描淡写中就秀出性感香肩，显得格外的优雅。垂顺服帖的下摆，塑造出一种柔美的知性魅力却不缺乏单调感。 纯手工钉珠和串亮片，耀眼夺目。亮片是整件衣服的点睛之笔，两种亮片和钉珠的不同形态出现顿时活力四射！ 重工金线刺绣与璀璨亮片完美结合，光芒四射，重工刺绣，精致唯美。 2.妖娆蓝色 蓝色，带着独特神秘气息，致命的妖娆 简洁的版型，与女性完美的身材曲线相呼应。轻松应对任何场合，不挑时间和地点万能款。 全内衬设计，高弹网纱材质，夏天透气束缚，确保不会挂到皮肤优质面料 ，做工精致，弹性很好，上身不变形。 经典手摇拉花，立显曲线身段 经典圆领装饰，修饰颈部，展现白皙娇嫩，高贵迷人" </p>
+						<h4>使用时注意事项</h4>
+						<p>1.夏季必备： 两个不同流行爆款，女性裙装必备；名媛贵妇的必选款 2.扮靓必备： 显瘦、时尚、修身、知性、得体、新款引荐； 3.健康必备： 里料网纱，透气清凉，弹性极好，即洗即干，舒适度极好 4.高贵晚礼服元素： 重工金线刺绣与璀璨亮片完美结合，手工绣珠编花，彰显奢侈稀缺品质，高档贵气，做工复杂精细。 </p>
+						
+					</div>
+					<img src="imgDatail/8.jpg"/>
+					<img src="imgDatail/9.jpg"/>
+					
+				</div>
+				<div class="peisong abc">
+					<div class="zhifu">
+						支付方式：货到付款 支付宝 
+					</div>
+					<div class="zhifu1">
+						<p class="l z1">A</p>
+						<div class="l zhifu2">
+							<p class="z2">货到付款： </p>
+							<p>
+目前风尚购物在已经开通电视购物的地区可以提供货到付款服务，您无需预先支付货款，只需先电话订购或直接在网站购买，在收到商品时再支付商品货款即可。				 </p>
+							<p class="z3">所有可配送地区 </p>
+							
+						</div>
+						
+					</div>
+					<div class="zhifu1">
+						<p class="l z1">B</p>
+						<div class="l zhifu2">
+							<p class="z2">货到付款： </p>
+							<p>
+目前风尚购物在已经开通电视购物的地区可以提供货到付款服务，您无需预先支付货款，只需先电话订购或直接在网站购买，在收到商品时再支付商品货款即可。				 </p>
+							<p class="z3">所有可配送地区 </p>
+							
+						</div>
+						
+					</div>
+					<div class="zhifu1">
+						<p class="l z1">C</p>
+						<div class="l zhifu2">
+							<p class="z2">货到付款： </p>
+							<p>
+目前风尚购物在已经开通电视购物的地区可以提供货到付款服务，您无需预先支付货款，只需先电话订购或直接在网站购买，在收到商品时再支付商品货款即可。				 </p>
+							<p class="z3">所有可配送地区 </p>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="guke abc">
+					<div class="disan">
+						<div class="l all7">
+							<p class="e4">有问题？我们的专业在线客服会为您解答疑问</p>
+							<p>共有<span>71</span>条咨询</p>
+							
+						</div>
+						<a class="l zixun" href="#">发表咨询</a>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您的订单成功了，我们的客服人员就会给您回电话核实您的订单。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>怎么成都市选不到啊</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，让您久等了，您直接进入网站，先注册在订购，www.fstvgo.com，然后在提交订单之前填写资料，在里面有可能会有两个地址选择，您重新选择过。</p>
+								<p>2015-12-23 20:54:12</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您的订单成功了，我们的客服人员就会给您回电话核实您的订单。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您的订单成功了，我们的客服人员就会给您回电话核实您的订单。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您的订单成功了，我们的客服人员就会给您回电话核实您的订单。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您的订单成功了，我们的客服人员就会给您回电话核实您的订单。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="disan1">
+						<div class="top5">
+							<a href="#" class="l f2"><img width="62" height="62" style="border-radius: 50%;"src="imgDatail/50.jpg"/></a>
+							<div class="l zhong2">
+								<p>商品咨询：</p>
+								<p>你好，请问我的订单成功了吗</p>
+								
+							</div>
+							<p class="l e7">2015-12-02 22:18:39</p>
+							
+						</div>
+						<div class="foo5">
+							<a href="#" class="l e5">13***57</a>
+							<div class="l e6">
+								<p>客服回复：您好，非常抱歉，让您久等了，您订购的商品12月25日已发货，7天内送到。</p>
+								<p>2015-12-03 09:34:08</p>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="pingjia abc">
+					<div class="div2">
+						<p class="l e1">100%</p>
+						<div class="l shuang">
+							<p class="haoping">好评度</p>
+							<p>共有6条评分</p>
+							
+						</div>
+					</div>
+					<div class="div1">
+						<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">13***57</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>给个好评,东西不错</p>
+						</div>
+						
+					</div>
+					<div class="div1">
+						<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">13***57</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>给个好评,东西不错</p>
+						</div>
+						
+					</div>
+					<div class="div1">
+					<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">网***用</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>不错，就是送货太慢了，从购买商品道送到家需要一个星期才到。</p>
+						</div>
+						
+					</div>
+					<div class="div1">
+					<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">苏***巧</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>东西不错，送货也挺快，正如电视所看到的，去污能力很强。</p>
+						</div>
+						
+					</div>
+					<div class="div1">
+					<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">送***丽</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>满意 </p>
+						</div>
+						
+					</div>
+					<div class="div1">
+					<div class="l daa" href="#"><img style="border-radius:50%;" width="62" height="62" src="imgDatail/50.jpg"/><a href="#">143***57</a></div>
+						<div class="l wenzi1">
+							<div class="e3"><p class="l beijing"></p>
+<p class="l yanse">5分，好评</p></div>
+							<p>挺好的</p>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<div id="foot">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript" src="js/detail.js">
+		
+//			$(".Dleft").on("click",".zhonga",function(){
+//				alert(1);
+//				var Src=$(this).find("img").attr("src");
+//				alert(Src);
+//				$(".smallpic").attr("src",Src);
+//				$(".bigPic").attr("src",Src);
+//				
+//			})
+//	
+//				var data = getCookie("dataid");
+//				//alert(data);
+//				$(function(){
+//					$.ajax({
+//						type:"get",
+//						url:"detail.json",
+//						async:true,
+//						dataType:"json",
+//						success:function(mag){
+//					
+//							var shuju = mag.data;
+//							var str='';
+//							var str1='';
+//							var str2='';
+//							for(var i in shuju){
+//								if(data==shuju[i].id){
+//									if(shuju[i].img5!=''){
+//																	
+//									str+='<div class="yi11" id="yi11">'
+//									str+='<img class="smallpic"  width="478" height="478" src="'+shuju[i].img+'"/>'	         
+//									str+='<span class="mark" id="mark"></span>'
+//					                str+='<span class="zhezhao" id="zhezhao"></span>'
+//									str+='</div>'
+//									str+='<div class="er22">'
+//									str+='<a href="javascript:;" class="l Lbtn">'	
+//									str+='</a>'
+//									str+='<div class="l zhong1">'
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img1+'"/></a>'		
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img4+'"/></a>'
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img5+'"/></a>'		
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img6+'"/></a>'
+//									str+='</div>'
+//									str+='<a href="javascript:;" class="r Rbtn">'		
+//									str+='</a>'
+//									str+='</div>'
+//									                                str+='<div class="san33">'
+//					                str+='<span style=""></a>'
+//					                str+='<a class="jing4" href="#"></a>'
+//					                str+='<a class="jing5" href="#"></a>'
+//					                str+='<a class="jing6" href="#">0</a>'
+//					                str+='<a class="shou" href="#"></a>'
+//					                str+='<div class="bigpic" id="bigpic">'
+//					                str+='<img class="bigPic" id="bibi" width="956" height="956" src="'+shuju[i].img+'"/>'
+//				                   str+='</div>'
+//									 str+='<span style="display:block;" class="l sp3">分享到：</span>'
+//					                str+='<a class="jing1" href="#"></a>'
+//					                str+='<a class="jing2" href="#"></a>'
+//					                str+='<a class="jing3" href="#"></a>'
+//									
+//									
+//									
+//									str1+='<div class="l zuo4">'
+//						            str1+='<h2>'+shuju[i].name+'</h2>'
+//									str1+='<p class="huohao">货&nbsp;&nbsp; &nbsp; &nbsp;号：<span>'+shuju[i].huohao+'</span></p>'
+//									str1+='<p class="jiage">风尚价格：<span>'+shuju[i].name1+'</span></p>'
+//						            str1+='<div class="ping">'
+//							        str1+='<div class="shuliang">'
+//								    str1+='<span class="sp4">'+shuju[i].name2+'</span>'
+//								   	str1+='<span class="sp5">'+shuju[i].xiaoliang+'</span>'	
+//							        str1+='</div>'
+//							        str1+='<div class="wenzi">'
+//								    str1+='<p class="l ppp1">元/网购积分</p>'
+//								    str1+='<p class="l ppp2">件/月销量</p>'
+//								    str1+='<p class="l ppp3">暂无评价</p>'	
+//									str1+='</div>'
+//						            str1+='</div>'
+//					           	 	str1+='<div class="ku">'
+//							        str1+='<p class="l ppp4">库&nbsp;&nbsp; &nbsp; &nbsp;存：</p>'
+//							        str1+='<div class="l xiala">'
+//								    str1+='江西 南昌市'
+//							        str1+='</div>'
+//							        str1+='<p class="l ppp5">现货</p>'
+//									str1+='</div>'
+//						            str1+='<div class="goumai">'
+//							        str1+='<p class="l ppp6">购买数量：</p>'
+//							        str1+='<div class="l inp6">'
+//							        str1+='<p class="l jianhao">-</p>'
+//							        str1+='<input class="l inpu" type="text" min="1" name="" id="" value="1" />'
+//							        str1+='<p class="l jiahao">+</p>'
+//						            str1+='</div>'
+//							        str1+='<p class="l ppp7">件&nbsp; &nbsp;   已选择“无  无码”</p>'
+//						            str1+='</div>'
+//						            str1+='<div class="A2">'
+//							        str1+='<a href="#"><img src="'+shuju[i].img2+'"/></a>'
+//							        str1+='<a class="aaa" dataid="'+shuju[i].id+'" href="javascript:;"><img src="'+shuju[i].img3+'"/></a>'
+//									str1+='</div>'
+//					                str1+='</div>'
+//					               
+//				                  
+//										
+//									}else{
+//									str+='<div class="yi11" id="yi11">'
+//									str+='<img class="smallpic" id="smallpic"  width="478" height="478" src="'+shuju[i].img+'"/>'	         
+//									str+='<span class="mark" id="mark"></span>'
+//					                str+='<span class="zhezhao" id="zhezhao"></span>'
+//									str+='</div>'
+//									str+='<div class="er22">'
+//									str+='<a href="javascript:;" class="l Lbtn">'	
+//									str+='</a>'
+//									str+='<div class="l zhong1">'
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img1+'"/></a>'		
+//									str+='<a class="l zhonga" href="javascript:;"><img width="50" height="50" src="'+shuju[i].img4+'"/></a>'
+//									
+//									str+='</div>'
+//									str+='<a href="javascript:;" class="r Rbtn">'		
+//									str+='</a>'
+//									str+='</div>'
+//									 str+='<div class="san33">'
+//					                str+='<span style=" display:block;" class="l sp3">分享到：</span>'
+//					                str+='<a class="jing1" href="#"></a>'
+//					                str+='<a class="jing2" href="#"></a>'
+//					                str+='<a class="jing3" href="#"></a>'
+//					                str+='<a class="jing4" href="#"></a>'
+//					                str+='<a class="jing5" href="#"></a>'
+//					                str+='<a class="jing6" href="#">0</a>'
+//					                str+='<a class="shou" href="#"></a>'
+//					                str+='<div class="bigpic" id="bigpic">'
+//					                str+='<img class="bigPic" id="bibi" width="956" height="956" src="'+shuju[i].img+'"/>'
+//				                  	str+='</div>'
+//									
+//									
+//									
+//									
+//									str1+='<div class="l zuo4">'
+//						            str1+='<h2>'+shuju[i].name+'</h2>'
+//									str1+='<p class="huohao">货&nbsp;&nbsp; &nbsp; &nbsp;号：<span>'+shuju[i].huohao+'</span></p>'
+//									str1+='<p class="jiage">风尚价格：<span>'+shuju[i].name1+'</span></p>'
+//						            str1+='<div class="ping">'
+//							        str1+='<div class="shuliang">'
+//								    str1+='<span class="sp4">'+shuju[i].name2+'</span>'
+//								   	str1+='<span class="sp5">'+shuju[i].xiaoliang+'</span>'	
+//							        str1+='</div>'
+//							        str1+='<div class="wenzi">'
+//								    str1+='<p class="l ppp1">元/网购积分</p>'
+//								    str1+='<p class="l ppp2">件/月销量</p>'
+//								    str1+='<p class="l ppp3">暂无评价</p>'	
+//									str1+='</div>'
+//						            str1+='</div>'
+//					           	 	str1+='<div class="ku">'
+//							        str1+='<p class="l ppp4">库&nbsp;&nbsp; &nbsp; &nbsp;存：</p>'
+//							        str1+='<div class="l xiala">'
+//								    str1+='江西 南昌市'
+//							        str1+='</div>'
+//							        str1+='<p class="l ppp5">现货</p>'
+//									str1+='</div>'
+//						            str1+='<div class="goumai">'
+//							        str1+='<p class="l ppp6">购买数量：</p>'
+//							        str1+='<div class="l inp6">'
+//							        str1+='<p class="l jianhao">-</p>'
+//							        str1+='<input class="l inpu" type="text" min="1" name="" id="" value="1" />'
+//							        str1+='<p class="l jiahao">+</p>'
+//						            str1+='</div>'
+//							        str1+='<p class="l ppp7">件&nbsp; &nbsp;   已选择“无  无码”</p>'
+//						            str1+='</div>'
+//						            str1+='<div class="A2">'
+//							        str1+='<a href="#"><img src="'+shuju[i].img2+'"/></a>'
+//							        str1+='<a class="aaa" dataid="'+shuju[i].id+'" href="#"><img src="'+shuju[i].img3+'"/></a>'
+//									str1+='</div>'
+//					                str1+='</div>'
+//					
+//					
+//				                    
+//										
+//									}
+//									
+//								
+//									
+//								
+//								}	
+//							
+//							}		
+//						
+//						
+//							$(".Dleft").append(str);
+//							$(".zuo4").append(str1);
+//						
+//						// seftsd()
+//						$("#yi11").mouseover(function(){
+//							$("#mark").show(); 
+//							$("#bigpic") .show() ;
+//						});
+//
+//			
+//						$("#yi11").mouseout(function(){
+//							$("#mark").hide() ; 
+//							$("#bigpic") .hide() 
+//						});
+//				
+//						$("#yi11").mousemove(function(evt){
+//					
+//							var e = evt || window.event;
+//					
+//					
+//							var l = e.pageX - $("#yi11").offset().left - $("#mark").width()/2;
+//							var t = e.pageY - $("#yi11").offset().top -$("#mark").height() /2;
+//					
+//					
+//					//限制边界
+//					if(l < 0){
+//						l = 0;
+//					}else if(l > $("#yi11").width() -$("#mark").width() ){
+//						l =$("#yi11").width() -$("#mark").width() ;
+//					}
+//					
+//					if(t < 0){
+//						t = 0;
+//					}else if( t >$("#yi11").height() -$("#mark").height()){
+//						t = $("#yi11").height() -$("#mark").height()
+//					}
+//					
+//					$("#mark").css({
+//						"left":l+'px',
+//						"top":t+"px"
+//					})
+//				
+//					
+//					$("#bibi").css({
+//						"left":-2*l+"px",
+//						"top":-2*t+"px"
+//					})
+//				})
+//			}
+//					
+//		})			
+//	})
+//				
+//				
+////		***************加入购物车
+//				var count=0;
+//				$("body").on("click",".zuo4 .aaa ",function(){
+//					//alert(1)
+//					var dataid = $(this).attr("dataid");
+//					alert(dataid)
+//					var count = $(".inpu").val();
+//					alert(getCookie(dataid))
+//					if(getCookie(dataid)===dataid){	
+//						
+//						var oldnum = getCookie("count"+dataid);
+//						var newnum = Number(oldnum)+Number(count);
+//						setCookie("count"+dataid,newnum);
+//						window.location.href="cart.html";
+//						//alert(oldnum);
+//						//alert(newnum);					
+//						
+//					}else{
+//						setCookie(dataid,dataid);
+//						setCookie("count"+dataid,count);
+//						window.location.href="cart.html";
+//					}
+//				})
+//		$(".xuan li").click(function(){
+//			for(var i=0; i<4; i++){
+//				$(".you3 .abc").eq(i).hide()
+//				if(i==$(this).index()){
+//					$(".you3 .abc").eq($(this).index()).show();
+//					$(this).css({
+//						"border-top":"2px solid red",
+//						"border-bottom":"0",
+//					}).siblings().css({
+//						"border-top":"1px solid #ccc",
+//						"border-bottom":"1px solid #ccc",
+//					}).find("a").css({
+//						"color":"#999"
+//					});
+//					$(this).find("a").css({
+//						"color":"red"
+//					})
+//				}
+//			}
+//
+//		})
+//		
+//	
+//				$("body").on("click",".aaa",function(){		
+//					$("body").append($(".yi11").find(".smallpic").clone().css({"width":"408px","height":"408px","position":"absolute","left":"50px","top":"200px"}).animate({"left":"1200px","top":"85px","width":"5px","height":"5px"},3000));
+//				})
+//				
+//				$(".zuo4").on("click",".jianhao",function(){
+//					var num=$(".inpu").val();
+//					num--;
+//					if(num<0){
+//						num=0;
+//					}
+//					$(".inpu").val(num);
+//					
+//				})
+//				$(".zuo4").on("click",".jiahao",function(){
+//					var num=$(".inpu").val();
+//					num++;
+//					$(".inpu").val(num);
+//					
+//				})
+//				
+//				
+//		
+//	
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+//		
+////			
+////			function seftsd(){
+////			//获取所有元素
+////				var oDiv = document.getElementById("yi11");
+////				var oMark = document.getElementById('mark');
+////				var oBig = document.getElementById('bigpic');
+////				var oSmall = document.getElementById('smallpic');
+////				var oImg = document.getElementById('bibi');
+////				var oZhe=document.getElementById("zhezhao");
+////				
+////				var oB=document.getElementById("banner");
+////				//var oD = document.getElementsByClassName("Dleft")[0];
+////				//给遮罩层添加鼠标移入事件
+////				oZhe.onmouseover = function(){
+////					oMark.style.display = 'block';  //让小块显示出来
+////					oBig.style.display = 'block';   //同时让大图显示出来
+////				};
+////				//给遮罩层添加鼠标移出事件
+////				oZhe.onmouseout = function(){
+////					oMark.style.display = 'none';  //让小块隐藏
+////					oBig.style.display = 'none';   //同时让大图隐藏
+////				};
+////				
+////				//给遮罩层添加鼠标移动事件
+////				oZhe.onmousemove = function(evt){
+////					var e = evt || window.event;
+////					
+////					//鼠标页面位置-最外面div到页面左边的距离 - 小图到oDiv的距离 - oFloat的宽度/2 (使鼠标到oFloat的中心位置);
+////					var l = e.pageX - oB.offsetLeft - oMark.offsetWidth/2;
+////					var t = e.pageY - oB.offsetTop - oMark.offsetHeight/2;
+////					
+////					
+////					//限制边界
+////					if(l < 0){
+////						l = 0;
+////					}else if(l > oDiv.offsetWidth - oMark.offsetWidth){
+////						l = oDiv.offsetWidth - oMark.offsetWidth;
+////					}
+////					
+////					if(t < 0){
+////						t = 0;
+////					}else if( t > oDiv.offsetHeight - oMark.offsetHeight){
+////						t = oDiv.offsetHeight - oMark.offsetHeight;
+////					}
+////					//console.log(e.clientX,oB.offsetLeft,oMark.offsetWidth/2,l,t);
+////					oMark.style.left = l + 'px';
+////					oMark.style.top = t + 'px';
+////					
+////					//小块活动的距离（移动比例）（大图显示比例）
+////	//				var percentX = l / (oDiv.offsetWidth - oMark.offsetWidth);
+////	//				var percentY = t / (oDiv.offsetHeight - oMark.offsetHeight);
+////					 //-percentX * (oImg.offsetWidth - oBig.offsetWidth)
+////					// percentY * (oImg.offsetHeight - oBig.offsetHeight)
+////					//大图的left值 = 移动比例 * （大图的宽度 - 大图所在Div的宽度）（大图所能移动的距离）
+////					oImg.style.left = -2*l + 'px';
+////					oImg.style.top = -2*t + 'px';
+////					
+////			};
+		
+		</script>
+		
+	</body>
+</html>

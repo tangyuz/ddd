@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+		</script>
+		<script type="text/javascript" src="js/header.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie1.js">
+			
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+			#banner{
+				height:426px;
+			}
+			
+			
+			#banner .lunbo{
+				width:720px;
+				height:344px;
+				overflow: hidden;
+				position:relative;
+			}
+			#banner .lunbo li{
+				display: none;
+				position:absolute;
+				left:0;
+				top:0;
+				display: none;
+			}
+			#banner .xin{
+				width:720px;
+				height:72px;
+				
+			}
+			#banner .xin a img{
+				width:720px;
+			}
+			#banner .zhi{
+				width:229px;
+				height:416px;
+				background: url(imgindex/pa_zb.gif) no-repeat 68px 12px;
+				margin-left:9px;
+				border-right:1px solid #ccc;
+				padding-top:12px;
+				
+			}
+			#banner .zhi h4{
+				margin-left: 98px;
+				margin-bottom: 4px;
+			}
+			#banner .zhi p.p1{
+				margin-top:14px;
+				height:21px;
+				line-height: 21px;
+				background: #eeeeee;
+				width:152px;
+				border-radius: 8px;
+				margin-left: 33px;
+			}
+			#banner .zhi p.p2{
+				margin-top:10px;
+				height:11px;
+				line-height: 11px;
+				margin-left: 33px;
+			}
+			#banner .zhi .box{
+				margin-top:4px;
+				width:129px;
+				height:22px;
+				margin-left: 54px;
+			}
+			#banner .zhi .box .p3{
+				width:87px;
+				background: red;
+				text-align: center;
+				color:#fff;
+				margin-right: 4px;
+			}
+			#banner .zhi .box .p4{
+				color:red;
+			}
+			#banner .zhi .box1 .p6{
+				width:87px;
+				background: red;
+				text-align: center;
+				color:#fff;
+				margin-right: 4px;
+			}
+			#banner .zhi .box1 .p7{
+				color:red;
+			}
+			#banner .zhi .duo{
+				height:62px;
+				border:1px solid #ccc;
+				margin-top: 7px;
+				padding-top: 8px;
+			}
+			#banner .zhi .duo .a1{
+				width:50px;
+				height:50px;
+				display: block;
+				margin-right: 12px;
+				
+			}
+			#banner .zhi .duo .a2{
+				display: block;
+				height:12px;
+				width:156px;
+				color:#999;
+				
+			}
+			#banner .zhi .duo p.p5{
+				color:#999;
+				margin-top: 8px;
+			
+			}
+			#banner .lunbo .btn {
+				
+				height:26px;
+				position:absolute;
+				left:555px;
+				top:308px;
+				z-index: 20;
+				
+			}
+			#banner .lunbo .btn  a{
+				width:26px;
+				height:26px;
+				display: block;
+				margin-right: 5px;
+				background:#999999;
+				float:left;
+				border-radius: 13px;
+				text-align: center;
+				text-decoration: none;
+				line-height: 26px;
+			}
+			
+			#content{
+				height:436px;
+				border-top:4px solid #333333;
+				overflow: hidden;
+			}
+			#content .top{
+				height:344px;
+				background: #FFFFFF;
+			}
+			#content .zuo{
+				width:237px;
+				height:344px;
+				border: 1px solid #ccc;
+				border-top: 0;
+				background: url(imgindex/pa_xs.gif) no-repeat 68px 13px;
+				overflow: hidden;
+				position:relative;
+			}
+			#content .zuo h4{
+				margin-left: 97px;
+				margin-top: 13px;
+				
+				
+			}
+			#content .zuo .tu{
+				width:208px;
+				margin:13px;
+				overflow: hidden;
+			}
+			#content .zuo .tu ul{
+				width:416px;
+			}
+			#content .zuo ul li{
+				width:208px;
+				float:left;
+			}
+			#content .zuo ul li .p1{
+				margin-left: 40px;
+			}
+			#content .zuo ul li .p2{
+				margin-left: 60px;
+				margin-top: 10px;
+				color:red;
+			}
+			#content .zuo ul li img{
+				width:208px;
+				height:208px;
+			}
+			#content .zuo .prev{
+				width:22px;
+				height:22px;
+				display: block;
+				background: url(imgindex/leftjian.png) no-repeat;
+				position:absolute;
+				left:10px;
+				top:10px;
+				
+			}
+			#content .zuo .next{
+				width:22px;
+				height:22px;
+				display: block;
+				background: url(imgindex/youjian.png) no-repeat;
+				position:absolute;
+				right:10px;
+				top:10px;
+				
+			}
+			#content .center .zuojian{
+				width:22px;
+				height:22px;
+				display: block;
+				background: url(imgindex/leftjian.png) no-repeat;
+				position:absolute;
+				left:10px;
+				top:153px;
+				
+			}
+			#content .center .youjian{
+				width:22px;
+				height:22px;
+				display: block;
+				background: url(imgindex/youjian.png) no-repeat;
+				position:absolute;
+				right:10px;
+				top:153px;
+				
+			}
+			#content .center{
+				width:720px;
+				height:344px;
+				border-top: 0;
+			}
+			#content .center .a1{
+				width:688px;
+				height:36px;
+				display: block;
+				border-bottom: 1px solid #ccc;
+				padding-left: 32px;
+				line-height: 36px;
+			}
+			#content .center .yun{
+				width:720px;
+				height:308px;
+				overflow: hidden;
+				position:relative;
+				
+			}
+			#content .center .yun .zong{
+				width:4320px;
+				height:308px;
+			}
+			#content .center .yun .zong .g{
+				width:720px;
+				height:308px;
+			}
+			#content .center .yun .zong .g .left{
+				width:239px;
+				height:307px;
+			}
+			#content .center .yun .zong .g .left .shang1{
+				height:133px;
+				padding:5px;
+				padding:10px;
+			}
+			#content .center .yun .zong .g .left .shang1 .tu1{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			#content .center .yun .zong .g .left .shang1 .tu1 .p1{
+				height:18px;
+				margin-top: 9px;
+				background:red;
+				color:#fff;
+			}
+			#content .center .yun .zong .g .left .shang1 .tu1 .p2{
+				color:red;
+			}
+			#content .center .yun .zong .g .left .xia1{
+				height:133px;
+				border-top: 1px solid #ccc;
+				padding:10px;
+				
+			}
+			#content .center .yun .zong .g .left .xia1 .tu1{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			#content .center .yun .zong .g .left .xia1 .tu1 .p1{
+				height:18px;
+				margin-top: 9px;
+				background:red;
+				color:#fff;
+			}
+			#content .center .yun .zong .g .left .xia1 .tu1 .p2{
+				color:red;
+			}
+			#content .center .yun .zong .g .zhong{
+				width:216px;
+				height:287px;
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				padding:10px;
+			}
+			#content .center .yun .zong .g .zhong .a4{
+				display: block;
+				height:12px;
+				margin-top: 10px;
+				margin-bottom: 3px;
+			}
+			#content .center .yun .zong .g .zhong .li .p1{
+				height:18px;
+				background:red;
+				color:#fff;
+				width:61px;
+				
+			}#content .center .yun .zong .g .zhong .li .p2{
+				color:red;
+			}
+			#content .center .yun .zong .g .you .shang2{
+				height:133px;
+				width:223px;
+				padding:10px;
+				
+			}
+			#content .center .yun .zong .g .you .shang2 .tu1{
+				width:61px;
+				margin-top:13px;
+				margin-left: 20px;
+			}
+			#content .center .yun .zong .g .you .shang2 .tu1 .p1{
+				height:18px;
+				margin-top: 9px;
+				background:red;
+				color:#fff;
+			}
+			#content .center .yun .zong .g .you .shang2 .tu1 .p2{
+				color:red;
+			}
+			#content .center .yun .zong .g .you .xia2{
+				height:133px;
+				width:223px;
+				padding:10px;
+				border-top: 1px solid #ccc;
+				
+			}
+			#content .center .yun .zong .g .you .xia2 .tu1{
+				width:61px;
+				margin-top:13px;
+				margin-left: 20px;
+			}
+			#content .center .yun .zong .g .you .xia2 .tu1 .p1{
+				height:18px;
+				margin-top: 9px;
+				background:red;
+				color:#fff;
+			}
+			#content .center .yun .zong .g .you .xia2 .tu1 .p2{
+				color:red;
+			}
+			#content .right{
+				width:224px;
+				height:344px;
+				border-top: 0;
+				padding-left:17px;
+			}
+			#content .right h4{
+				text-align: center;
+				font-size: 16px;
+				margin-bottom: 26px;
+			}
+			#content .right a{
+				color:#999999;
+				width:189px;
+				display: block;
+			}
+			#content .xia{
+				margin-top: 10px;
+				height:78px;
+			}
+			#content .xia img{
+			}
+			.com{
+				height:42px;
+			}
+			.com h4{
+				margin-top: 18px;
+				font-size: 15px;
+			}
+			.com a{
+				margin-top: 21px;
+				display: block;
+				color:#0066cc;
+			}
+			.com1{
+				height:345px;
+			}
+			.lou1 h4{
+				color:#ff5500;
+			}
+			.lou2 h4{
+			}
+			.lou3 h4{
+				color:#e7604c;
+			}
+			.lou4 h4{
+				color:#009adf;
+			}
+			.lou5 h4{
+				color:#e74c8a;
+			}
+			.lou6 h4{
+				color:#179442;
+			}
+			.lou7 h4{
+				color:#0c5ba0;
+			}
+			.floor1{
+				border-top: 3px solid #ff5500;
+			}
+			.floor2{
+				border-top: 3px solid;
+			}
+			.floor3{
+				border-top: 3px solid #e7604c;
+			}
+			.floor4{
+				border-top: 3px solid #009adf;
+			}
+			.floor5{
+				border-top: 3px solid #e74c8a;
+			}
+			.floor6{
+				border-top: 3px solid #179442;
+			}
+			.floor7{
+				border-top: 3px solid #0c5ba0;
+			}
+			.com1 .zuo1{
+				border:0;
+				height:344px;
+			}
+			.com1 .you1{
+				width:959px;
+				height:344px;
+				border:1px solid #ccc;
+				border-top: 0;
+			}
+			.com1 .you1 ul{
+				height:36px;
+				line-height: 36px;
+			}
+			.com1 .you1 ul li a{
+				padding:0 26px;
+				color:#999999;
+			}
+			.com1 .you1 ul li.first a{
+				color:#ff5500;
+				border-right: 1px solid #ccc;
+			}
+			.com1 .you1 .kuai{
+				width:959px;
+				height:308px;
+				border-top: 1px solid #ccc;
+			}
+			.box1,.box2,.box3,.box4{
+				border-right: 1px solid #ccc;
+			}
+			.box4{
+				border:0;
+			}
+			.box1 .top1,.box1 .xia1{
+				width:218px;
+				height:153px;
+			}
+			.box1 .top1{
+				border-bottom: 1px solid #ccc;
+			}
+			.box3 .top2,.box3 .xia2{
+				width:218px;
+			}
+			.box3 .top2{
+				border-bottom:1px solid #ccc;
+			}
+			 .kuai .box1 .top1{
+				height:133px;
+				padding:10px;
+			}
+			.kuai .box1 .top1 .tu2{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			 .kuai .box1 .top1 .tu2 .pp1{
+				height:18px;
+				margin-top: 9px;
+				color:red;
+			}
+			 .kuai .box1 .xia1{
+				height:133px;
+				padding:10px;
+			}
+			.kuai .box1 .xia1 .tu2{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			 .kuai .box1 .xia1 .tu2 .pp1{
+				height:18px;
+				margin-top: 9px;
+				color:red;
+			}
+			 .kuai .box3 .top2{
+				height:133px;
+				padding:10px;
+			}
+			.kuai .box3 .top2 .tu2{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			 .kuai .box2 .top2 .tu2 .pp1{
+				height:18px;
+				margin-top: 9px;
+				color:red;
+			}
+			 .kuai .box3 .xia2{
+				height:133px;
+				padding:10px;
+			}
+			.kuai .box3 .xia2 .tu2{
+				width:61px;
+				margin-top:13px;
+				margin-left: 10px;
+			}
+			 .kuai .box3 .xia2 .tu2 .pp1{
+				height:18px;
+				margin-top: 9px;
+				color:red;
+			}
+			
+			.kuai .box2,.kuai .box4{
+				width:218px;
+				height:287px;
+				padding:10px;
+				overflow: hidden;
+			}
+			.kuai .box2,.box4 .aa3{
+				display: block;
+			}
+			.kuai .box2,.box4 .pp2{
+				color:red;
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<!--//*********头部*****-->
+		<div id="header">
+			<div class="top">
+				<div class="box">
+					<span class="l sp1"></span>
+					<a  class="l tui" href="index.html"></a>
+					
+					<a  class="l a1" href="#">登录</a>
+					<a  class="l a2" href="regis.html">免费注册</a>
+					<p  class="l p1">&nbsp;送50元</p>
+					<a  class="l a3" href="login.html">电话订购会员登录登录</a>
+					<p  class="l p2">&nbsp;送50元</p>
+					<div class="box1 l">
+						<a class=" p3">我的风尚<img src="imgindex/xiajian.jpg" alt="" /></a>					<!--//********二级菜单******//-->
+						<ul>
+							<li class="first"><a href="#">我的订单</a></li>
+							<li><a href="#">我的积分</a></li>
+							<li><a href="#">我的优惠劵</a></li>
+							<li><a href="#">我的消息</a></li>
+							<li><a href="#">我的收藏</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+			<div class="w top1">
+				<a class="a1" href="index.html"><img src="imgindex/logo.gif"/></a>
+				<div class="sou">
+					<input class="input1" type="text" name="" id="" value="" />
+					<input class="input2" type="button" name="" id="" value="搜索" />
+				</div>
+				<div class="bk">
+					
+				</div>
+				<div class="gou">
+					<a href="#">去购物车结算</a>
+					<img class="pic1" src="imgindex/0.jpg"/>
+					<img class="pic2" src="imgindex/1.jpg"/>
+					<img class="pic3"src="imgindex/2.jpg"/>
+										
+				</div>
+				<div class="all">
+					<p class="l">热门搜索:</p>
+					<ul class="l">
+						<li><a href="">手表</a></li>
+						<li><a href="">海参</a></li>
+						<li><a href="">国宾</a></li>
+						<li><a href="">洗衣机</a></li>
+						<li><a href="">拖把</a></li>
+						<li><a href="">窗帘</a></li>
+						<li><a href="">羽绒服</a></li>
+						<li><a href="">皮衣</a></li>
+						<li><a href="">蚕丝被</a></li>
+					</ul>
+					
+				</div>
+				
+				
+			</div>
+			<!--//*****导航条******************-->
+			<div class="w top2">
+				<div class="quan">	
+				</div>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li class="tu"><a style="padding-left: 80px; background:url(imgindex/5.jpg) no-repeat 43px 2px" href="index.html">电视直播</a></li>
+					<li><a href="HotSale.html">热卖榜</a></li>
+					<li><a href="fsh.html">风尚惠</a></li>
+					<li><a href="phoneshop.html">手机购物</a></li>
+					<li><a href="shop.html">品牌店中店</a></li>
+				</ul>
+				<a  class="zixun" href="#"><img src="imgindex/6.jpg"/></a>
+				
+			</div>
+
+			
+			
+		</div>
+	<!--	//*********第二块******-->
+		<div id="banner" class="w">
+			<!--********轮播图*********-->
+			<div class="l left">
+				<div class="lunbo">
+					<ul>
+						<li style="display:block;"><img  src="imgindex/lu1.jpg"/></li>
+						<li><img src="imgindex/lu2.png"/></li>
+						<li><img src="imgindex/lu3.png"/></li>
+						<li><img src="imgindex/lu4.png"/></li>
+						<li><img src="imgindex/lu5.jpg"/></li>
+					</ul>
+					<div class="btn">
+						
+							<a href="javascript:;">1</a>
+							<a href="javascript:;">2</a>
+							<a href="javascript:;">3</a>
+							<a href="javascript:;">4</a>
+							<a href="javascript:;">5</a>
+					</div>
+				
+				</div>
+				<div class="xin">
+					<a href="#"><img src="imgindex/9.jpg"/></a>
+					
+					
+				</div>
+			</div>
+			<!--//*****右边***-->
+			<div class="l zhi">
+				<h4>正在直播</h4>
+				<a href="#"><img src="imgindex/10.jpg"/></a>
+				<p class="p1">当前播放17:10~18:00</p>
+				<p class="p2">德国爱乐仕皇家御用锅具套组</p>
+				<div class="box">
+					<p class="l p3">立减20元</p>
+					<p class="l p4">¥979</p>
+				</div>
+				<div class="duo">
+					<a class="l a1" href="#"><img src="imgindex/11.jpg"/></a>
+					<a class="l a2" href="#">皇室金爵干红原酒进口组</a>
+					<p class="l p5">上一节目16:30~17:10</p>
+					<div class="box1">
+					<p class="l p6">立减20元</p>
+					<p class="l p7">¥179</p>
+				</div>
+					
+				
+				</div>
+			</div>
+			
+			
+		</div>
+		<!--***************第三块***********-->
+		<div id="content" class="w">
+			<div class="top">
+				<!--***********小轮播图************-->
+				<div class="l zuo">
+					<h4>今日特惠</h4>
+					<div class=tu>
+						<ul>
+						<li><img src="imgindex/14.jpg"/>
+							<p class="p1">"马踏飞燕"多功能太阳镜</p>
+							<p class="p2">风尚价：¥199</p>
+						
+						</li>
+						<li><img src="imgindex/13.jpg"/>
+							<p class="p1">开诚印花冰丝席清凉一夏套组</p>
+							<p class="p2"> 风尚价：¥299</p>
+						
+						</li>
+						</ul>
+						
+						
+					</div>
+					
+					<a class="prev" href="javascript:;"></a>
+					<a class="next" href="javascript:;"></a>
+					
+				
+				</div>
+				<!--*************大轮播图************-->
+				<div class="l center">
+					<a class="a1" href="#">TV热播</a>
+					<div class="yun">
+						<a class="zuojian" href="javascript:;"></a>
+						<a class="youjian" href="javascript:;"></a>
+						<div class="zong">
+							<div class="l pic1 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo1.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥179</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo2.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">飞力士多功能营养破壁机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥579</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo5.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo3.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo4.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="l pic2 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo6.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">法国森锌清新木纹时尚家居套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥9979</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo7.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">回味经典李丹复古留声机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥1479</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo5.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo3.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo4.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="l pic3 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo11.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥179</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo12.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">飞力士多功能营养破壁机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥579</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo13.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo14.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo15.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="l pic4 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo16.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥179</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo17.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">飞力士多功能营养破壁机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥579</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo18.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo19.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo20.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="l pic5 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo21.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥179</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo22.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">飞力士多功能营养破壁机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥579</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo23.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo24.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo25.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+								
+							</div>
+							<div class="l pic6 g">
+								<div class="l left">
+									<div class="shang1">
+										<a class="l a2" href="#"><img src="imgindex/bo26.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥179</p>
+										</div>
+										
+										
+									</div>
+									<div class="xia1">
+										<a class="l " href="#"><img src="imgindex/bo27.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">飞力士多功能营养破壁机</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥579</p>
+										</div>
+									</div>
+									
+								</div>
+								<div class="l zhong">
+									<a href="#"><img src="imgindex/bo28.jpg"/></a>
+									<a class="a4" href="#">天然南红玛瑙收藏套组</a>
+									<div class="li">
+										<p class="l p1">立减20元&nbsp;</p>
+										<p class="l p2">¥678</p>
+										
+									</div>
+									
+								</div>
+								<div class="l you">
+									<div class="shang2">
+										<a class="l" href="#"><img src="imgindex/bo29.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">Skinlady槿兰多效修护钻石组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥279</p>
+										</div>
+										
+									</div>
+									<div class="xia2">
+										<a class="l" href="#"><img src="imgindex/bo30.jpg"/></a>
+										<div class="l tu1">
+											<a  class="a3" href="#">尚上品羊脂玉福在眼前套组</a>
+											<p class="p1">立减20元</p>
+											<p class="p2">¥6960</p>
+										</div>
+										
+										
+									</div>
+									
+									
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="l right">
+					<h4>风尚头条</h4>
+					<a href="#">[公告] 海南浪漫双人游</a>
+					<a href="#">[快讯] 从跨界到破界，风尚购物获首届中国电视购物行业年会“年度卓越奖”</a>
+					<a href="#">[喜讯] 风尚购物成功挂牌新三板</a>
+					<a href="#">[帮助] 如何使用礼金券编码 </a>
+					<a href="#">[促销]品牌店中店商品推荐</a>
+					<a href="#">[公告] 注册或电视会员升级即获50元</a>
+					<a href="#">[公告] 网上订购直播商品立减20元</a>
+					<a href="#">[帮助] 风尚购物之购物说明</a>
+					<a href="#">[帮助] 配送地区及运费说明</a>
+					<a href="#">[帮助] 支付方式说明</a>
+					<a href="#">[帮助] 售后服务政策</a>
+					<a href="#">[帮助]积分说明</a>
+					
+					
+				</div>
+			</div>
+			<div class="xia">
+				<a href="#"><img src="imgindex/12.jpg"/></a>
+				
+			</div>
+			
+		</div>
+		<!--********************楼层*******-->
+		<div class="w lou1 com">
+			<h4 class="l">1F.家居生活</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+		</div>
+		<div id="market1" class="w floor1 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f1.jpg"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f2.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f3.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f4.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f5.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f6.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f7.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou2 com">
+			<h4 class="l">2F.数码家电</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market2" class="w floor2 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f8.jpg"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f9.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f10.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f11.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f12.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f13.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f14.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou3 com">
+			<h4 class="l">3F.服饰配件</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market3" class="w floor3 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f15.png"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f16.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f17.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f18.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f17.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f20.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f21.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou4 com">
+			<h4 class="l">4F.保健养生</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market4" class="w floor4 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f22.jpg"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f23.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f24.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f25.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f26.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f27.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f28.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou5 com">
+			<h4 class="l">5F.美容美发</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market5" class="w floor5 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f29.png"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f30.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f31.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f32.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f33.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f34.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f35.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou6 com">
+			<h4 class="l">6F.食品健康</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market6" class="w floor6 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f36.png"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f37.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f38.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f39.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f40.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f41.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f42.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div class="w lou7 com">
+			<h4 class="l">7F.珠宝收藏</h4>
+			<p class="r"><a href="#">更多 ></a></p>
+			
+		</div>
+		<div id="market7" class="w floor7 com1">
+			<div class="l zuo1">
+				<a href="#"><img src="imgindex/f43.png"/></a>
+				
+			</div>
+			<div class="l you1">
+					<ul>
+						<li class="l first"><a href="#">热销商品推荐</a></li>
+						<li class="l"><a href="#">家居用品</a></li>
+						<li class="l"><a href="#">厨浴电器</a></li>
+						<li class="l"><a href="#">卧室床品</a></li>
+						<li class="l"><a href="#">汽车用品</a></li>
+					</ul>
+					<div class="kuai">
+						<div class="l box1">
+							<div class="top1">
+								<a class="l aa1" href="#"><img src="imgindex/f45.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia1">
+								<a class="l aa1" href="#"><img src="imgindex/f45.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							
+						</div>
+						<div class="l box2">
+							<a href="#"><img src="imgindex/f46.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						<div class="l box3">
+							<div class="top2">
+								<a class="l aa1" href="#"><img src="imgindex/f47.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+								
+							</div>
+							<div class="xia2">
+								<a class="l aa1" href="#"><img src="imgindex/f48.jpg"/></a>
+										<div class="l tu2">
+											<a  class="aa2" href="#">妙煮妇橘子传说去污霸</a>
+											<p class="pp1">¥179</p>
+										</div>
+							</div>
+							
+						</div>
+						<div class="l box4">
+							<a href="#"><img src="imgindex/f7.jpg"/></a>
+							<a class="aa3" href="#">巴洛克不锈钢浴室柜</a>
+							<p class="pp2">¥2480</p>
+							
+						</div>
+						
+					</div>
+				
+			</div>
+			
+		</div>
+		<div id="foot">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript" src="js/index.js">
+//		$("#foot").load("foot.html")
+////		***************大轮播**********
+//			var _index=0;
+//			var lun=$(".lunbo");
+//			var pic=$(".left .lunbo li");
+//			var length=pic.size();
+//			var oA=$(".left .lunbo .btn a");
+//			var timer=setInterval(change,2000)
+//			lun.mouseover(function(){
+//				clearInterval(timer);
+//			})
+//			lun.mouseout(function(){
+//				timer=setInterval(change,2000);
+//			})
+//			oA.mouseover(function(){
+//					_index = $(this).index()-1;
+//					change();
+//			})
+//			function change(){
+//				_index++;
+//				if(_index>=length){
+//					_index=0;
+//				}
+//				pic.eq(_index).stop(true).fadeIn().siblings().stop(true).fadeOut();
+//				oA.css({
+//					"background":"#999999"
+//				})
+//				oA.eq(_index).css({
+//					"background":"red",
+//					"color":"#fff"
+//				})
+//				
+//			}
+//			
+//			
+////			*************小轮播**********
+//			var timer1=setInterval(lunbo,2000);
+//				function lunbo(){
+//					$("#content .zuo .tu ul").animate({'marginLeft':'-208px'},1500,function(){
+//						$("#content .zuo .tu ul li").eq(0).appendTo($("#content .zuo .tu ul"))
+//						$("#content .zuo .tu ul").css({'marginLeft':0})
+//					})
+//				}
+//			$("#content .zuo").on("click",".prev",zuojian)
+////			***************左边按钮的运动**********
+//			function zuojian(){
+//				$("#content .zuo").off("click",".prev");
+//				$("#content .zuo .tu ul li").eq(1).prependTo($("#content .zuo .tu ul"))
+//				$("#content .zuo .tu ul").css({'marginLeft':'-208px'})
+//				$("#content .zuo .tu ul").animate({'marginLeft':'0'},1500,function(){
+//					$("#content .zuo").on("click",".prev",zuojian);
+//				});
+//			}
+//			
+//			$("#content .zuo .next").click(function(){
+//				lunbo();
+//			})
+////			**********移入移出*************
+//			$("#content .zuo").hover(function(){
+//				clearInterval(timer1);
+//			},function(){
+//				timer1=setInterval(lunbo,2000);
+//			})
+////			************大轮播*********
+//			var timer2=setInterval(animated,10000)
+//			function animated(){
+//				$("#content .center .yun .zong").animate({"marginLeft":"-720px"},5000,function(){
+//					$("#content .center .yun .zong>div").eq(0).appendTo($("#content .center .yun .zong"));
+//					$("#content .center .yun .zong").css({
+//						"marginLeft":"0"
+//					})
+//				})
+//				
+//			}
+//			$("#content .center .yun").hover(function(){
+//				clearInterval(timer2);
+//			},function(){
+//				timer2=setInterval(animated,10000);
+//			})
+//			$("#content .center .youjian").click(function(){
+//				animated();
+//			})
+//			$("#content .center").on("click",".zuojian",zuoAnimated);
+//			
+//			function zuoAnimated(){
+//				$("#content .center").off("click",".zuojian");
+//				$("#content .center .yun .zong>div").eq(5).prependTo($("#content .center .yun .zong"))
+//				$("#content .center .yun .zong").css({'marginLeft':'-720px'})
+//				$("#content .center .yun .zong").animate({'marginLeft':'0'},5000,function(){
+//					$("#content .center").on("click",".zuojian",zuoAnimated);
+//				});
+//			}
+			
+		</script>
+		<script src="js/header.js"></script>
+		
+	</body>
+</html>

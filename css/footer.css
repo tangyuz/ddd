@@ -1,0 +1,15 @@
+			#footer{
+				height:306px;
+				
+				padding-top: 32px;
+				border-top:2px solid #dddddd;
+			}
+			#footer .p1{
+				margin-top:10px ;
+				color: #999999;
+				
+			}
+			
+			a:hover{
+				text-decoration: underline;
+			}

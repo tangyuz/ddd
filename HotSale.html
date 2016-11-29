@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js">
+			
+		</script>
+		<script type="text/javascript" src="js/header1.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie.js">
+			
+		</script>
+		<script type="text/javascript" src="js/foot.js">
+			
+		</script>
+		<script type="text/javascript" src="js/cookie1.js">
+			
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="css/header1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			#hot{
+				height:94px;
+				background:yellow;
+				background:url(imgHot/2.gif) no-repeat 12px 32px;
+			}
+			#hot .tp{
+				width:122px;
+				height:52px;
+				background:url(imgHot/1.gif) no-repeat;
+				margin-top: 35px;
+			}
+			#banner{
+				height:2112px;
+				background:red;
+				margin-bottom: 5px;
+			}
+			#banner .remai{
+				background:#fff;
+				height:2013px;
+				width:1100px;
+				padding:55px 24px 45px 78px;
+			}
+			#banner .remai .yi{
+				width:227px;
+				height:356px;
+				border:1px solid #ccc;
+				position:relative;
+				margin-right: 45px;
+				margin-bottom: 45px;
+			}
+			#banner .remai .yi .atu{
+				width:208px;
+				height:208px;
+				display: block;
+				border:0;
+				margin:10px;
+				overflow: hidden;
+				
+				
+			}
+			#banner .remai .yi .a2{
+				display: block;
+				margin-left: 5px;
+				margin-bottom: 13px;
+			}
+			#banner .remai .yi .di{
+				height:12px;
+				margin-left: 5px;
+			}
+			#banner .remai .yi .di .p1{
+				margin-right: 5px;
+				color:red;
+			}
+			#banner .remai .yi .di .p2{
+				color:#999;
+			}
+			#banner .remai .yi .shu{
+				position:absolute;
+				color:#fff;
+				border-radius: 25px;
+				width:50px;
+				height:50px;
+				text-align: center;
+				line-height: 50px;
+				left:-28px;
+				top:-14px;
+				background: red;
+				font-size: 20px;
+			}
+			#banner .remai .yi .a3{
+				display: block;
+				width:99px;
+				height:24px;
+				margin-left: 118px;
+				margin-top: 49px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			
+		</div>
+		<div class="w" id="hot">
+			<div class="r tp">
+				
+			</div>
+			
+			
+		</div>
+		<div id="banner">
+			<div class="w remai">
+				<!--<div class="l yi">
+					<a class="a1" href="#"><img src="imgHot/x1.jpg"/></a>
+					<a class="a2" href="#">迪菲怡时尚绣珠亮片连衣裙</a>
+					<div class="di">
+						<p class="l p1">¥199</p>
+						<p class="l p2">送1积分</p>
+					</div>
+					<div class="shu">
+						1
+					</div>	
+					<a class="a3" href="#"><img src="imgHot/ding.png"/></a>
+				</div>-->
+				
+			</div>
+			
+		</div>
+		<div id="foot">
+			
+		</div>
+		<div id="footer">
+			
+		</div>
+		<script type="text/javascript" src="js/HotSale.js">
+//			$("#footer").load("footer.html");
+//			$.ajax(
+//				{
+//					type:"get",
+//					url:"HotJson.json",
+//					async:true,
+//					datatype:"json",
+//					success:function(mag){
+//						var data=mag.data;
+//						var str='';
+//						for(var i in data){
+//							str+='<div class="l yi">'
+//							str+='<a dataid="'+data[i].id+'" class="atu" href="#"><img  src="'+data[i].img+'"/></a>'
+//							str+='<a class="a2" dataid="'+data[i].id+'"  href="#">'+data[i].name+'</a>'
+//							str+='<div class="di">'
+//							str+='<p class="l p1">'+data[i].name1+'</p>'
+//							str+='<p class="l p2">'+data[i].name2+'</p>'
+//							str+='</div>'
+//							str+='<div class="shu">'
+//							str+=data[i].id		
+//							str+='</div>'	
+//							str+='<a dataid="'+data[i].id+'" class="a3" href="javascript:;"><img src="'+data[0].img1+'"/></a>'
+//							str+='</div>'	
+//							
+//						}
+//						$(".remai").append(str);
+//						
+//						
+//						
+//						
+//					}
+//					
+//					
+//				}
+//			)
+//			//***********跳转详情页***************
+//			$(".remai").on("click",".a3",function(){
+//				
+//					var dataid=$(this).attr("dataid");
+//					setCookie("dataid",dataid);
+//					window.location.href="detail.html"
+//					
+//					
+//			})
+//			//**********图片放大效果****************
+//			$("body").on("mouseover",".atu",function(){
+//				$(this).find("img").stop(false,true).animate({
+//					"width":"250px",
+//					"height":"250px",
+//					"marginLeft":"-20px",
+//					"marginTop":"-20px"
+//				})
+//			})
+//			$("body").on("mouseout",".atu",function(){
+//				$(this).find("img").stop(false,true).animate({
+//					"width":"208px",
+//					"height":"208px",
+//					"marginLeft":"0px",
+//					"marginTop":"0px"
+//				})
+//			})
+			
+		</script>
+	</body>
+</html>
